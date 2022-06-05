@@ -1,0 +1,142 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+nav {
+  height: 7rem;
+  background-color: #e2e2e2;
+  justify-content: space-between;
+}
+.logo-container {
+  height: inherit;
+}
+.logo-container img {
+  object-fit: cover;
+  height: inherit;
+  width: 200px;
+}
+.menu-container {
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.menu-container ul {
+  height: inherit;
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+.menu-container li {
+  margin: 0.7rem;
+}
+.menu-container button {
+  background-color: #e2e2e2;
+  border: #e2e2e2;
+}
+
+.sign-in-options {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.sign-in-options button {
+  margin: 1rem;
+}
+.mobilebtn-div {
+  display: none;
+  align-items: center;
+  margin: 1rem;
+}
+#menu-button {
+  width: 4rem;
+  font-size: 1.5rem;
+}
+
+/* Section 1 css */
+.first-section {
+  background: url("../images/bg1.jpg");
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Antic Slab", serif;
+  font-size: 5vw;
+  padding-inline: 20rem;
+  padding-top: 5rem;
+  letter-spacing: 5px;
+}
+h4 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-inline: 5rem;
+}
+.search-pane {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+/* Sign in module */
+.blurred-div {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+#form_div {
+  background-color: #e2e2e2;
+}
+
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.details {
+  display: block;
+  padding: 1rem;
+  align-items: center;
+}
+
+.line {
+  height: 1px;
+  background-color: grey;
+}
+
+.exit {
+  text-align: right;
+}
+.sign-up-div {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
+}
+.sign-up-div a {
+  text-decoration: none;
+}
+.sign-up-btn {
+  background: none;
+  border: none;
+  color: #0d6efd;
+}
+.sign-up-btn:hover {
+  border: 1px solid #0d6efd;
+  background: none;
+  color: #0d6efd;
+}
+.sign-in-head {
+  justify-content: center;
+}
