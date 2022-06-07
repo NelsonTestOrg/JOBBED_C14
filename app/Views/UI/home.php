@@ -35,10 +35,7 @@
                 Sign In
                 <i class="fa-solid fa-arrow-right-to-bracket p-1"></i>
             </button>
-            <button class="btn btn-outline-primary">
-                Sign Up
-                <i class="fa-solid fa-user-plus p-1"></i>
-            </button>
+
         </div>
         <div class="mobilebtn-div" id="mobilebtn-div">
             <button class="btn btn-primary menu-button" id="menu-button">
@@ -61,6 +58,26 @@
             <button class="btn btn-primary mx-2">
                 Let's get connected
             </button>
+        </div>
+    </section>
+    <section class="promo-section">
+        <div class="promo-container">
+            <div class="promo-header m-3 p-4">
+                <h3>Popular Services</h3>
+            </div>
+            <div class="line mx-4"></div>
+            <div class="promo-items p-4 m-3" id="promo-list">
+                <div class="card-holder p-3 m-2">
+                    <img src="images/cleaning.jpg" alt="" class="promo-image">
+                </div>
+                <div class="card-holder p-3 m-2">
+                    <img src="images/cleaning.jpg" alt="" class="promo-image">
+                </div>
+                <div class="card-holder p-3 m-2">
+                    <img src="images/cleaning.jpg" alt="" class="promo-image">
+                </div>
+
+            </div>
         </div>
     </section>
 

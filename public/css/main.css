@@ -1,10 +1,15 @@
 * {
   font-family: "Nunito", sans-serif;
 }
+section {
+  width: 100%;
+}
 nav {
+  position: fixed;
   height: 7rem;
   background-color: #e2e2e2;
   justify-content: space-between;
+  width: 100%;
 }
 .logo-container {
   height: inherit;
@@ -57,10 +62,12 @@ nav {
 /* Section 1 css */
 .first-section {
   background: url("../images/bg1.jpg");
-  height: 90vh;
+  height: 70vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 7rem;
+  background-attachment: fixed;
 }
 h1 {
   text-transform: uppercase;
@@ -93,10 +100,6 @@ h4 {
   align-items: center;
   justify-content: center;
   display: none;
-}
-
-#form_div {
-  background-color: #e2e2e2;
 }
 
 h3 {
@@ -139,4 +142,24 @@ h3 {
 }
 .sign-in-head {
   justify-content: center;
+}
+
+#sign_up_form_div {
+  display: none;
+}
+
+/* Promo section css */
+.promo-section {
+  height: fit-content;
+  background-color: white;
+}
+.promo-items {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+.promo-image {
+  width: 20rem;
+  border-radius: 5px;
 }
