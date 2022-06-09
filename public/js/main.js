@@ -110,7 +110,10 @@ modulest.addEventListener('click', e => {
 })
 
 
+window.addEventListener("scroll", function () {
+    var page = document.getElementById("main-body");
 
-
-
-
+    let offset = window.pageYOffset;
+    console.log(offset);
+    page.style.backgroundPositionY = offset * 0.8 + "px";
+})

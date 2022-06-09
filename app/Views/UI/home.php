@@ -44,7 +44,7 @@
         </div>
     </nav>
     <?php include("module/signIn.php");  ?>
-    <section class="first-section">
+    <section class="first-section" id="main-body">
         <div class="seller-text">
             <h1 id="big-text">
                 taking care of your home needs
