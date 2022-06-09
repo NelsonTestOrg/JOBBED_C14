@@ -72,7 +72,7 @@ menu_mobile_btn.addEventListener('click', function () {
     }
 })
 
-
+//registration & Sign up registration module switching
 const modulest = document.getElementById("loginModule");
 
 var reg_link_btn = document.getElementById("register_link_btn");
@@ -109,11 +109,14 @@ modulest.addEventListener('click', e => {
     capture: true
 })
 
-
+//background offsetting for the home page
 window.addEventListener("scroll", function () {
     var page = document.getElementById("main-body");
 
+
     let offset = window.pageYOffset;
     console.log(offset);
-    page.style.backgroundPositionY = offset * 0.8 + "px";
+    page.style.backgroundPositionY = offset * 0.5 + "px";
+
 })
+

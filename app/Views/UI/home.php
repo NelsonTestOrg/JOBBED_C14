@@ -54,7 +54,7 @@
             </h4>
         </div>
         <div class="search-pane p-4 m-4 w-100">
-            <input class="form-control form-control-lg w-50" type="text" placeholder="Which services are you looking for?">
+            <input class="form-control form-control-lg w-50 search-option" type="text" placeholder="Which services are you looking for?">
             <button class="btn btn-primary mx-2">
                 Let's get connected
             </button>
