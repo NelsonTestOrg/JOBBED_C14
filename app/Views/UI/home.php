@@ -49,7 +49,7 @@
             <h1 id="big-text">
                 taking care of your home needs
             </h1>
-            <h4>
+            <h4 style="color: white;">
                 Finding someone to run your errands, get your engine fixed? We have someone for everyone.
             </h4>
         </div>

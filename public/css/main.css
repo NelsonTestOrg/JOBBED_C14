@@ -62,9 +62,9 @@ nav {
 
 /* Section 1 css */
 .first-section {
-  background: url("../images/bg1.jpg");
-  height: 70vh;
-  background-position: center;
+  background: url("../images/bg2.jpg");
+  height: 90vh;
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 7rem;
