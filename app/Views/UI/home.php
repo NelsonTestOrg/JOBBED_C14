@@ -61,24 +61,65 @@
         </div>
     </section>
     <section class="promo-section">
-        <div class="promo-container">
+        <div class="promo-container row">
             <div class="promo-header m-3 p-4">
                 <h3>Popular Services</h3>
             </div>
             <div class="line mx-4"></div>
-            <div class="promo-items p-4 m-3" id="promo-list">
-                <div class="card-holder p-3 m-2">
-                    <img src="images/cleaning.jpg" alt="" class="promo-image">
+            <div class="row promo-row">
+                <div class="col col-promo">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="./images/cleaning.jpg" alt="" />
+                        </div>
+                        <div class="card-details">
+                            <h3>Cleaning</h3>
+                            <p>Get the best cleaning services</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-holder p-3 m-2">
-                    <img src="images/cleaning.jpg" alt="" class="promo-image">
+                <div class="col col-promo">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="./images/cleaning.jpg" alt="" />
+                        </div>
+                        <div class="card-details">
+                            <h3>Cleaning</h3>
+                            <p>Get the best cleaning services</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-holder p-3 m-2">
-                    <img src="images/cleaning.jpg" alt="" class="promo-image">
+                <div class="col col-promo">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="./images/cleaning.jpg" alt="" />
+                        </div>
+                        <div class="card-details">
+                            <h3>Cleaning</h3>
+                            <p>Get the best cleaning services</p>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
+    </section>
+    <section class="mid-section">
+        <div class="promo-header m-3 p-4">
+            <h3>Pricing</h3>
+        </div>
+        <div class="line-2 mx-4"></div>
+        <div class="pricing-details p-4">
+            <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores fuga architecto aliquid eum recusandae incidunt cum ut aliquam blanditiis quis. A illum natus deserunt minima iste nisi in, recusandae doloremque.</h4>
+        </div>
+        <div class="button p-4">
+            <button class="btn btn-outline-light w-50">
+                View Prices
+            </button>
+        </div>
+
+    </section>
+    <section class="final-section">
+
     </section>
 
 
