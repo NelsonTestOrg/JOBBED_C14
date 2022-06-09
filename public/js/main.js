@@ -118,5 +118,14 @@ window.addEventListener("scroll", function () {
     console.log(offset);
     page.style.backgroundPositionY = offset * 0.5 + "px";
 
+
+    if (offset != 0) {
+        navbarX.style.backgroundColor = "rgba(0,0,0,0.5)";
+    } else {
+        navbarX.style.backgroundColor = "#e2e2e2";
+    }
+
 })
+
+
 

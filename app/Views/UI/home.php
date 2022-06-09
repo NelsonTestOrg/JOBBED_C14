@@ -6,7 +6,7 @@
 <body>
     <nav class="nav nav-container" id="navbar">
         <div class="logo-container">
-            <img src="images/GigRfilled.png" alt="Logo">
+            <img src="images/GigRtransparent.png" alt="Logo">
         </div>
         <div class="menu-container" id="menu_options">
             <ul>
