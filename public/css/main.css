@@ -62,7 +62,8 @@ nav {
 
 /* Section 1 css */
 .first-section {
-  background: url("../images/bg3.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.5)),
+    url("../images/bg3.jpg");
   height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
