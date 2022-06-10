@@ -112,11 +112,13 @@ modulest.addEventListener('click', e => {
 //background offsetting for the home page
 window.addEventListener("scroll", function () {
     var page = document.getElementById("main-body");
+    var bg2 = document.getElementById("mid-section");
 
 
     let offset = window.pageYOffset;
     console.log(offset);
     page.style.backgroundPositionY = offset * 0.5 + "px";
+    bg2.style.backgroundPositionY = offset * 0.04 + "px";
 
 
     if (offset != 0) {
@@ -126,6 +128,8 @@ window.addEventListener("scroll", function () {
     }
 
 })
+
+
 
 
 

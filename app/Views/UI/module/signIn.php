@@ -45,21 +45,25 @@
                 </div>
                 <div class="line m-2"></div>
             </div>
-
             <div class="form-group">
-                <label for="user-email">Email address</label>
-                <input type="email" class="form-control" id="user-email" aria-describedby="emailHelp" placeholder="Enter email">
+                <label for="user_name">Username</label>
+                <input type="text" class="form-control" id="user_name" aria-describedby="emailHelp" placeholder="Enter username">
+                <small id="emailHelp" class="form-text text-muted">Enter your username here.</small>
+            </div>
+            <div class="form-group">
+                <label for="user_email">Email address</label>
+                <input type="email" class="form-control" id="user_email" aria-describedby="emailHelp" placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
                 <label for="user-password">Password</label>
-                <input type="password" class="form-control" id="user-password" placeholder="Password">
+                <input type="password" class="form-control" id="user_password" placeholder="Password">
             </div>
             <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Remember Me</label>
             </div>
-            <button class="btn btn-primary w-100">Register</button>
+            <button class="btn btn-primary w-100" id="register">Register</button>
             <div class="sign-up-div p-3">
                 <p>
                     Already have an account?

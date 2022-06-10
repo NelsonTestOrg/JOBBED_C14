@@ -12,6 +12,11 @@ nav {
   width: 100%;
   z-index: 99;
 }
+.top-btns {
+  border: none;
+  color: black;
+  background-color: rgba(255, 255, 255, 0);
+}
 .logo-container {
   height: inherit;
 }
@@ -36,10 +41,6 @@ nav {
 }
 .menu-container li {
   margin: 0.7rem;
-}
-.menu-container button {
-  background-color: #e2e2e2;
-  border: #e2e2e2;
 }
 
 .sign-in-options {

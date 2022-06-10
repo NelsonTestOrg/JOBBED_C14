@@ -11,19 +11,19 @@
         <div class="menu-container" id="menu_options">
             <ul>
                 <li>
-                    <button class="btn btn-light">
+                    <button class="btn btn-outline-light top-btns">
                         <i class="fa-solid fa-house"></i>
                         Home
                     </button>
                 </li>
                 <li>
-                    <button class="btn btn-light">
+                    <button class="btn btn-outline-light top-btns">
                         <i class="fa-solid fa-circle-info"></i>
                         About us
                     </button>
                 </li>
                 <li>
-                    <button class="btn btn-light">
+                    <button class="btn btn-outline-light top-btns">
                         <i class="fa-solid fa-headset"></i>
                         Contact us
                     </button>
@@ -31,7 +31,7 @@
             </ul>
         </div>
         <div class="sign-in-options" id="verification">
-            <button class="btn btn-outline-primary" onclick="showModule()">
+            <button class="btn btn-primary" onclick="showModule()">
                 Sign In
                 <i class="fa-solid fa-arrow-right-to-bracket p-1"></i>
             </button>
@@ -103,7 +103,7 @@
             </div>
         </div>
     </section>
-    <section class="mid-section">
+    <section class="mid-section" id="mid-section">
         <div class="promo-header m-3 p-4">
             <h3>Pricing</h3>
         </div>
@@ -125,6 +125,41 @@
 
 </body>
 <!-- js files -->
+
 <script src="js/main.js"></script>
+<script>
+    //registration procedure
+    $(document).ready(function() {
+        $(document).on('click', '#register', function() {
+            if ($.trim($('#user_email').val()).length == 0 || $.trim($('#user_password').val()).length == 0) {
+                alert('Please fill Both Fields')
+
+            } else {
+                var data = {
+                    'user_name': $('#user_name').val(),
+                    'user_email': $('#user_email').val(),
+                    'user_password': $('#user_password').val()
+                };
+                $.ajax({
+                    url: "<?php echo base_url('data_handling/new_user') ?>",
+                    method: 'POST',
+                    data: data,
+                    success: function(result) {
+                        if (result == 1) {
+                            alert("Nice Job!");
+                        } else {
+                            alert("Something went awfully wrong");
+                        }
+                    }
+                })
+            }
+
+        });
+
+
+
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </html>
