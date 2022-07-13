@@ -1,73 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include("header.php"); ?>
+<head>
+    <?php include("module/header.php"); ?>
+</head>
+
 
 <body>
-    <nav class="nav nav-container" id="navbar">
-        <div class="logo-container">
-            <img src="images/GigRtransparent.png" alt="Logo">
-        </div>
-        <div class="menu-container" id="menu_options">
-            <ul>
-                <li>
-                    <button class="btn btn-outline-light top-btns">
-                        <i class="fa-solid fa-house"></i>
-                        Home
-                    </button>
-                </li>
-                <li>
-                    <button class="btn btn-outline-light top-btns">
-                        <i class="fa-solid fa-circle-info"></i>
-                        About us
-                    </button>
-                </li>
-                <li>
-                    <button class="btn btn-outline-light top-btns">
-                        <i class="fa-solid fa-headset"></i>
-                        Contact us
-                    </button>
-                </li>
-            </ul>
-        </div>
-        <div class="sign-in-options" id="verification">
-            <button class="btn btn-primary" onclick="showModule()">
-                Sign In
-                <i class="fa-solid fa-arrow-right-to-bracket p-1"></i>
-            </button>
-
-        </div>
-        <div class="mobilebtn-div" id="mobilebtn-div">
-            <button class="btn btn-primary menu-button" id="menu-button">
-                <i class="fa-solid fa-bars" id="menu-button-icon"></i>
-            </button>
-        </div>
-    </nav>
+    <?php include("module/navbar.php"); ?>
     <?php include("module/signIn.php");  ?>
     <section class="first-section" id="main-body">
+        <div class="page-head">
+            <h1>HOME</h1>
+        </div>
         <div class="seller-text">
-            <h1 id="big-text">
+            <h1 class="big-text">
                 taking care of your home needs
             </h1>
             <h4 style="color: white;">
                 Finding someone to run your errands, get your engine fixed? We have someone for everyone.
             </h4>
         </div>
-        <div class="search-pane p-4 m-4 w-100">
-            <input class="form-control form-control-lg w-50 search-option" type="text" placeholder="Which services are you looking for?">
+        <div class="search-pane p-4 w-100">
+            <select class="form-select form-select-lg w-50 search-option">
+                <option selected>What services are you looking for?</option>
+                <option value="1">Service One</option>
+                <option value="2">Service Two</option>
+                <option value="3">Service Three</option>
+            </select>
             <button class="btn btn-primary mx-2">
                 Let's get connected
             </button>
         </div>
     </section>
     <section class="promo-section">
-        <div class="promo-container row">
+        <div class="promo-container">
             <div class="promo-header m-3 p-4">
                 <h3>Popular Services</h3>
             </div>
             <div class="line mx-4"></div>
-            <div class="row promo-row">
-                <div class="col col-promo">
+            <div class="promo-row">
+                <div class="col-promo">
                     <div class="card">
                         <div class="image-container">
                             <img src="./images/cleaning.jpg" alt="" />
@@ -78,7 +51,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-promo">
+                <div class="col-promo">
                     <div class="card">
                         <div class="image-container">
                             <img src="./images/cleaning.jpg" alt="" />
@@ -89,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-promo">
+                <div class="col-promo">
                     <div class="card">
                         <div class="image-container">
                             <img src="./images/cleaning.jpg" alt="" />
@@ -118,10 +91,7 @@
         </div>
 
     </section>
-    <section class="final-section">
-
-    </section>
-
+    <?php include("module/footer.php"); ?>
 
 </body>
 <!-- js files -->
@@ -148,6 +118,10 @@
                     success: function(result) {
                         if (result == 1) {
                             alert("Nice Job!");
+                            $('#user_name').val("");
+                            $('#user_email').val("");
+                            $('#user_password').val("");
+
                         } else {
                             alert("Something went awfully wrong");
                         }

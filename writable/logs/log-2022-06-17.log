@@ -1,0 +1,21 @@
+CRITICAL - 2022-06-17 11:55:44 --> Call to a member function helper() on null
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\Home->services()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-17 11:55:56 --> Call to a member function helper() on null
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\Home->services()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-17 11:56:12 --> Call to a member function view() on null
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\Home->services()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

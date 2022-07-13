@@ -55,7 +55,7 @@ window.addEventListener('resize', function () {
         bigtext.style.paddingInline = "20rem"
 
         //changes list display
-        promo_dlist.style.flexWrap = "nowrap";
+        promo_dlist.style.flexWrap = "no-wrap";
         promo_dlist.style.justifyContent = "space-between";
 
     }

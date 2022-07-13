@@ -8,4 +8,8 @@ class Home extends BaseController
     {
         return view('UI/home.php');
     }
+    public function services()
+    {
+        return view('UI/services.php');
+    }
 }
