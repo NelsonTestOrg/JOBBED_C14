@@ -6,7 +6,7 @@
         <ul>
             <li>
                 <a href="<?php echo base_url("/") ?>">
-                    <button class="btn btn-outline-light top-btns">
+                    <button class="btn btn-outline-dark top-btns">
                         <i class="fa-solid fa-house px-2"></i>
                         Home
                     </button>
@@ -15,7 +15,7 @@
             </li>
             <li>
                 <a href="<?php echo base_url("services") ?>">
-                    <button class="btn btn-outline-light top-btns">
+                    <button class="btn btn-outline-dark top-btns">
                         <i class="fa-solid fa-briefcase px-2"></i>
                         Services
                     </button>
@@ -23,8 +23,8 @@
 
             </li>
             <li>
-                <a href="<?php echo base_url("services") ?>">
-                    <button class="btn btn-outline-light top-btns">
+                <a href="<?php echo base_url("profile") ?>">
+                    <button class="btn btn-outline-dark top-btns">
                         <i class="fa-solid fa-user-circle px-2"></i>
                         Profile
                     </button>

@@ -9,6 +9,9 @@
 <body>
     <?php include("module/navbar.php"); ?>
     <?php include("module/signIn.php");  ?>
+    <div class="operation-message success" id="success_2">
+        <p>User Login Successful.</p>
+    </div>
     <section class="first-section" id="main-body">
         <div class="page-head">
             <h1>HOME</h1>
@@ -103,8 +106,9 @@
     $(document).ready(function() {
         $(document).on('click', '#register', function() {
             if ($.trim($('#user_email').val()).length == 0 || $.trim($('#user_password').val()).length == 0) {
-                alert('Please fill Both Fields')
-
+                $('#warning').fadeIn('slow', function() {
+                    $('#warning').delay(3000).fadeOut();
+                });
             } else {
                 var data = {
                     'user_name': $('#user_name').val(),
@@ -112,18 +116,64 @@
                     'user_password': $('#user_password').val()
                 };
                 $.ajax({
-                    url: "<?php echo base_url('data_handling/new_user') ?>",
+                    url: "<?php echo base_url('data_handling/register') ?>",
                     method: 'POST',
                     data: data,
                     success: function(result) {
                         if (result == 1) {
-                            alert("Nice Job!");
+                            $('#success').fadeIn('slow', function() {
+                                $('#success').delay(3000).fadeOut();
+                            });
                             $('#user_name').val("");
                             $('#user_email').val("");
                             $('#user_password').val("");
 
+                        }
+                        if (result == 2) {
+                            $('#warning_ex').fadeIn('slow', function() {
+                                $('#warning_ex').delay(3000).fadeOut();
+                            });
                         } else {
-                            alert("Something went awfully wrong");
+                            $('#error').fadeIn('slow', function() {
+                                $('#error').delay(3000).fadeOut();
+                            });
+                        }
+                    }
+                })
+            }
+
+        });
+        $(document).on('click', '#login', function() {
+            if ($.trim($('#login_email').val()).length == 0 || $.trim($('#login_password').val()).length == 0) {
+                $('#warning').fadeIn('slow', function() {
+                    $('#warning').delay(3000).fadeOut();
+                });
+            } else {
+                var data = {
+                    'login_email': $('#login_email').val(),
+                    'login_password': $('#login_password').val()
+                };
+                $.ajax({
+                    url: "<?php echo base_url('data_handling/login') ?>",
+                    method: 'POST',
+                    data: data,
+                    success: function(login_res) {
+                        if (login_res == 1) {
+                            $('#success_2').fadeIn('slow', function() {
+                                $('#success_2').delay(3000).fadeOut();
+                            });
+                            $('#login_email').val("");
+                            $('#login_password').val("");
+
+                        }
+                        if (login_res == 2) {
+                            $('#warning_ex').fadeIn('slow', function() {
+                                $('#warning_ex').delay(3000).fadeOut();
+                            });
+                        } else {
+                            $('#error').fadeIn('slow', function() {
+                                $('#error').delay(3000).fadeOut();
+                            });
                         }
                     }
                 })

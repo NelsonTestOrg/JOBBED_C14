@@ -7,7 +7,9 @@ var navbarX = document.getElementById("navbar");
 var menu_div = document.getElementById("menu_options");
 var verification_div = document.getElementById("verification");
 var bigtext = document.getElementById("big-text");
-
+const pd_btn = document.getElementById("pd_btn");
+const po_btn = document.getElementById("po_btn");
+const ph_btn = document.getElementById("ph_btn");
 
 if (navbarX.clientWidth <= 900) {
 
@@ -87,7 +89,7 @@ function closeModule() {
 
 //brings up the signIn/signUp module
 function showModule() {
-    modulest.style.display = "flex";
+    modulest.style.display = "inline-flex";
 }
 
 //switches between the login and register pages-like your ex 

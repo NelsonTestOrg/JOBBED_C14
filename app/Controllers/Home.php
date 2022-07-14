@@ -12,4 +12,8 @@ class Home extends BaseController
     {
         return view('UI/services.php');
     }
+    public function profile()
+    {
+        return view('UI/profile.php');
+    }
 }
