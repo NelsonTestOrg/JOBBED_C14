@@ -1,0 +1,715 @@
+CRITICAL - 2022-07-14 16:22:27 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:22:29 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:22:29 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:22:29 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:22:29 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:22:30 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:22:30 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:22:30 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:22:31 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:22:31 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:22:31 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:22:32 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:22:32 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:22:33 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:22:33 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:22:34 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:22:34 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 16:27:03 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:05 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:05 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:06 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:06 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:06 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:06 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:06 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:06 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:07 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:07 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:07 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:07 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:07 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:08 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:09 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:09 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:09 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:09 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:09 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:09 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:10 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:10 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:11 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:11 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:11 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:12 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:12 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:12 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:12 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:12 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:13 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:14 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:14 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:14 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:14 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:14 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:15 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:15 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:15 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:27:15 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('lenny123', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-14 16:28:09 --> password_verify() expects parameter 2 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_verify...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\gigr\app\Controllers\data_handling.php(90): password_verify('', Object(CodeIgniter\Database\MySQLi\Result))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2022-07-14 17:05:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com' at line 1
+CRITICAL - 2022-07-14 17:24:09 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:24:10 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:24:11 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:24:11 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:24:11 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:24:11 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:24:12 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:24:12 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:24:12 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:24:12 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:24:13 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:24:13 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:24:13 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:24:13 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:24:13 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:25:47 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:25:48 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:25:48 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:25:48 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:26:42 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:26:43 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:26:44 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:26:44 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:26:44 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:26:44 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:26:44 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:26:45 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:26:45 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:26:45 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:26:45 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-14 17:26:45 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\data_handling->login()
+#1 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

@@ -34,6 +34,9 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('services', 'Home::services');
 $routes->get('profile', 'Home::profile');
+$routes->get('request', 'Home::request');
+$routes->get('categories', 'Home::categories');
+$routes->get('logout', 'Home::logout');
 
 /*
  * --------------------------------------------------------------------

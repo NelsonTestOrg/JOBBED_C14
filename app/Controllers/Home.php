@@ -16,4 +16,19 @@ class Home extends BaseController
     {
         return view('UI/profile.php');
     }
+    public function request()
+    {
+        return view('UI/request.php');
+    }
+    public function categories()
+    {
+        return view('UI/categories.php');
+    }
+    public function logout()
+    {
+        $session = session();
+        session_unset();
+        $session->destroy();
+        return view('UI/home');
+    }
 }

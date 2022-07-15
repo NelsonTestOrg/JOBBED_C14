@@ -1,3 +1,7 @@
+<?php
+$session = session();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,9 +13,7 @@
 <body>
     <?php include("module/navbar.php"); ?>
     <?php include("module/signIn.php");  ?>
-    <div class="operation-message success" id="success_2">
-        <p>User Login Successful.</p>
-    </div>
+
     <section class="first-section" id="main-body">
         <div class="page-head">
             <h1>HOME</h1>
@@ -120,7 +122,10 @@
                     method: 'POST',
                     data: data,
                     success: function(result) {
+
+                        alert(result);
                         if (result == 1) {
+                            location.reload();
                             $('#success').fadeIn('slow', function() {
                                 $('#success').delay(3000).fadeOut();
                             });
@@ -128,11 +133,6 @@
                             $('#user_email').val("");
                             $('#user_password').val("");
 
-                        }
-                        if (result == 2) {
-                            $('#warning_ex').fadeIn('slow', function() {
-                                $('#warning_ex').delay(3000).fadeOut();
-                            });
                         } else {
                             $('#error').fadeIn('slow', function() {
                                 $('#error').delay(3000).fadeOut();
@@ -144,14 +144,14 @@
 
         });
         $(document).on('click', '#login', function() {
-            if ($.trim($('#login_email').val()).length == 0 || $.trim($('#login_password').val()).length == 0) {
+            if ($.trim($('#login-email').val()).length == 0 || $.trim($('#login-password').val()).length == 0) {
                 $('#warning').fadeIn('slow', function() {
                     $('#warning').delay(3000).fadeOut();
                 });
             } else {
                 var data = {
-                    'login_email': $('#login_email').val(),
-                    'login_password': $('#login_password').val()
+                    'login_email': $('#login-email').val(),
+                    'login_password': $('#login-password').val()
                 };
                 $.ajax({
                     url: "<?php echo base_url('data_handling/login') ?>",
@@ -162,26 +162,21 @@
                             $('#success_2').fadeIn('slow', function() {
                                 $('#success_2').delay(3000).fadeOut();
                             });
-                            $('#login_email').val("");
-                            $('#login_password').val("");
+                            $('#login-email').val("");
+                            $('#login-password').val("");
+                            window.location = 'home';
 
-                        }
-                        if (login_res == 2) {
-                            $('#warning_ex').fadeIn('slow', function() {
-                                $('#warning_ex').delay(3000).fadeOut();
-                            });
-                        } else {
+                        } else if (login_res == 0) {
                             $('#error').fadeIn('slow', function() {
                                 $('#error').delay(3000).fadeOut();
                             });
+                        } else {
+                            alert("Deez NUts");
                         }
                     }
                 })
             }
-
         });
-
-
 
     });
 </script>

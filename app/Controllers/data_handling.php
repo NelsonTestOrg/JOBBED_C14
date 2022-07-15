@@ -80,24 +80,29 @@ class data_handling extends BaseController
     }
     public function login()
     {
+        $sesion = session();
         $login_email = $this->request->getPost("login_email");
         $login_pass = $this->request->getPost("login_password");
+
         $user_login = new user_model();
         $login_res = $user_login->login($login_email);
+        $hashed_pass = $login_res['user_password'];
+        $db_uname = $login_res['users_name'];
+        $db_uID = $login_res['user_id'];
+        $db_email = $login_res['user_email'];
 
-        if ($login_res == false) {
-            echo 0;
+        $user_data = [
+            'user_name' => $db_uname,
+            'user_id' => $db_uID,
+            'user_email'=>$db_email
+        ];
+
+        if (password_verify($login_pass, $hashed_pass)) {
+            $sesion->set($user_data);
+            echo 1;
         } else {
-            $db_pass = $login_res['user_password'];
-            $db_uname = $login_res['users_name'];
-            $final_pass = password_verify($db_pass, $login_pass);
-            
-            if ($final_pass) {
-                $_SESSION['user_name'] = $db_uname;
-                echo 1;
-            } else {
-                echo 0;
-            }
+            echo 0;
         }
     }
+   
 }

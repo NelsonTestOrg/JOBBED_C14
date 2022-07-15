@@ -2,7 +2,7 @@
     <div class="f">
         <div class="first-div">
             <img src="images/man.png" alt="">
-            <h4 class="name">Sir. Gon Dix</h4>
+            <h4 class="name"><?php echo $_SESSION['user_name']; ?></h4>
             <hr>
         </div>
         <div class="second-div">
@@ -14,8 +14,11 @@
         </div>
     </div>
     <div class="logout-div">
-        <button class="btn btn-outline-danger logout">
-            Log Out
-        </button>
+        <a href=" <?php echo base_url("logout"); ?>">
+            <button class="btn btn-outline-danger logout" id="logout">
+                Log Out
+            </button>
+        </a>
+
     </div>
 </div>

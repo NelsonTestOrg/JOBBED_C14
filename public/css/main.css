@@ -82,6 +82,7 @@ nav {
 }
 .sign-in-options button {
   margin: 1rem;
+  text-transform: uppercase;
 }
 .mobilebtn-div {
   display: none;
@@ -359,6 +360,7 @@ h3 {
   background: url("../images/bg4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  justify-content: center;
 }
 .service-bar {
   width: 100%;
@@ -366,12 +368,21 @@ h3 {
 .pending-orders {
   width: 100%;
   display: inline-flex;
-  justify-content: end;
+  justify-content: center;
   padding-inline-end: 2rem;
 }
+.pending-orders a {
+  width: 20%;
+  margin-inline: 1rem;
+}
 .pending-orders button {
-  width: 30%;
+  width: 100%;
   padding: 0.5rem;
+  box-shadow: 0px 0px 10px black;
+}
+
+.pending-orders button:hover {
+  text-shadow: 0px 0px 10px black;
 }
 .search-bar {
   padding: 1rem;
@@ -454,6 +465,7 @@ h3 {
   transition: transform 0.2s;
   width: fit-content;
   height: fit-content;
+  justify-self: center;
   background-color: white;
   margin: 1rem;
   padding: 1rem;
@@ -550,6 +562,7 @@ h3 {
   color: black;
   font-size: 3vh;
   padding: 0;
+  text-transform: uppercase;
 }
 .second-div ul {
   padding: 2rem;
@@ -828,6 +841,14 @@ button:hover {
   color: #877840;
   border: 1px solid #877840;
 }
+.warning-2 {
+  left: 25%;
+  text-align: center;
+  background-color: #cbe5fe;
+  padding: 1.5rem;
+  color: #1d3f66;
+  border: 1px solid #1d3f66;
+}
 .error {
   background-color: #f7d7da;
   color: #9e726b;
@@ -835,4 +856,80 @@ button:hover {
 }
 .operation-message p {
   margin: 0;
+}
+.category-toggle {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 2px solid #232123;
+  margin-block: 1rem;
+  padding-inline: 1rem;
+}
+.category-toggle button {
+  border-radius: 0;
+  border: none;
+  outline: none;
+  width: 30%;
+  color: white;
+  transition: transform 0.1s;
+  padding: 0.5rem;
+  background-color: #232123;
+}
+.category-toggle button:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+}
+.category-toggle button:hover {
+  background-color: black;
+  color: white;
+}
+.svc-container {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  padding-block-start: 2rem;
+  padding-inline: 2rem;
+}
+.services-display {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.699);
+  display: inline-flex;
+  flex-direction: column;
+  height: fit-content;
+}
+.card-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.data-input {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 1rem;
+  align-items: center;
+}
+.data-input select {
+  padding: 1rem;
+}
+.data-input textarea {
+  width: 100%;
+}
+.location {
+  display: inline-flex;
+  flex-direction: column;
+}
+.branding {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-block-start: 2rem;
+}
+.branding img {
+  width: 7vw;
+  height: 5vh;
+  object-fit: cover;
 }

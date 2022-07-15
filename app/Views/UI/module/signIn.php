@@ -3,6 +3,9 @@
         <div class="operation-message success" id="success">
             <p>User Registration Successful.</p>
         </div>
+        <div class="operation-message success" id="success_2">
+            <p>User Login Successful.</p>
+        </div>
         <div class="operation-message error" id="error">
             <p>User Registration Failed.</p>
         </div>

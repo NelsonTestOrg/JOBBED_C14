@@ -1,3 +1,7 @@
+<?php
+$session = session();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,6 +49,12 @@
             pd_div.style.display = "flex";
             pp_div.style.display = "none";
         })
+
+        // $(document).on('click', '#logout', function() {
+        //     sessionStorage.clear();
+        //     window.location = '/';
+        //     location.reload();
+        // })
     </script>
 
 </body>

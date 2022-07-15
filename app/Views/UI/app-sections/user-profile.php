@@ -43,7 +43,7 @@
                 <div class="name-field w-50">
                     <div class="name-data">
                         <h5 class="part-detail px-3">Surname:</h5>
-                        <input type="text" name="user_surname" placeholder="Sir. Gon" id="">
+                        <input type="text" name="user_surname" placeholder="<?php echo $_SESSION['user_name']; ?>" id="">
                     </div>
                     <div class="name-data">
                         <h5 class="part-detail px-3">Last Name:</h5>
@@ -61,7 +61,7 @@
                     </h5>
                 </div>
                 <div class="edit-em-dv py-3 px-3 w-50">
-                    <input type="email" name="user_email" class="edit-box" placeholder="sirgondix@gmail.com" id="">
+                    <input type="email" name="user_email" class="edit-box" placeholder="<?php echo $_SESSION['user_email']; ?>" id="">
                 </div>
             </div>
         </div>

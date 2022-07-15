@@ -18,10 +18,7 @@ class user_model extends Model
     {
         $db = db_connect();
         $login_result = $db->query("SELECT * FROM tbl_users WHERE user_email = '" . $login_email . "'");
-        if (empty($login_result->getResultArray())) {
-            return false;
-        } else {
-            return $login_result->getResultArray();
-        }
+
+        return $login_result->getRowArray();
     }
 }

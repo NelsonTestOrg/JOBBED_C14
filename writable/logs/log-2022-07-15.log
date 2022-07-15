@@ -1,0 +1,10 @@
+CRITICAL - 2022-07-15 08:47:23 --> syntax error, unexpected ')', expecting '('
+#0 C:\xampp\htdocs\gigr\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\gigr\system\Common.php(1089): CodeIgniter\View\View->render('UI/services.php', Array, true)
+#2 C:\xampp\htdocs\gigr\app\Controllers\Home.php(13): view('UI/services.php')
+#3 C:\xampp\htdocs\gigr\system\CodeIgniter.php(832): App\Controllers\Home->services()
+#4 C:\xampp\htdocs\gigr\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\gigr\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\gigr\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\gigr\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
