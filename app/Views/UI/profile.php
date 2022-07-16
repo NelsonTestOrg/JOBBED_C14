@@ -50,11 +50,23 @@ $session = session();
             pp_div.style.display = "none";
         })
 
-        // $(document).on('click', '#logout', function() {
-        //     sessionStorage.clear();
-        //     window.location = '/';
-        //     location.reload();
-        // })
+        $(document).ready(function() {
+            displayPendingIssues();
+        })
+
+        function displayPendingIssues() {
+            $.ajax({
+                url: "<?php echo base_url('data_handling/getPendingIssues') ?>",
+                method: 'GET',
+                success: function(response) {
+                    $.each(response, function(key, value) {
+                        $("#issue_category").append(
+                            "<option value =" + value.service_id + ">" + value.service_name + "</option>"
+                        )
+                    })
+                }
+            })
+        }
     </script>
 
 </body>

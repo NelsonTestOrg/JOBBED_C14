@@ -66,6 +66,8 @@ class data_handling extends BaseController
             $role_id = '1';
 
 
+
+
             $my_user_reg = new user_model();
             $result = $my_user_reg->add_user($username, $email, $hashed_password, $role_id);
 
@@ -94,7 +96,7 @@ class data_handling extends BaseController
         $user_data = [
             'user_name' => $db_uname,
             'user_id' => $db_uID,
-            'user_email'=>$db_email
+            'user_email' => $db_email
         ];
 
         if (password_verify($login_pass, $hashed_pass)) {
@@ -104,5 +106,45 @@ class data_handling extends BaseController
             echo 0;
         }
     }
-   
+    public function postIssue()
+    {
+        $issue_owner_id = $this->request->getPost('user_id');
+        $issue_category = $this->request->getPost('issue_category');
+        $issue_venue = $this->request->getPost('issue_venue');
+        $issue_description = $this->request->getPost('issue_details');
+        $issue_location = $this->request->getPost('issue_location');
+
+        $model_instance = new user_model();
+        $result = $model_instance->post_issue($issue_owner_id, $issue_category, $issue_venue, $issue_description, $issue_location);
+
+        if ($result) {
+            // return redirect()->back()->with('fail', 'Something went awfully wrong');
+            echo 1;
+        } else {
+            // return redirect()->back()->with('success', 'You have been registered successfully');
+            echo 0;
+        }
+    }
+    public function getServices()
+    {
+        $model_instance = new user_model();
+        $request_query = "SELECT * FROM tbl_services";
+        $service_array = $model_instance->getData($request_query);
+        return $this->response->setJSON($service_array);
+    }
+    public function getLocation()
+    {
+        $model_instance = new user_model();
+        $request_query = "SELECT * FROM tbl_service_location";
+        $service_array = $model_instance->getData($request_query);
+        return $this->response->setJSON($service_array);
+    }
+    public function getPendingIssues()
+    {
+        $model_instance = new user_model();
+        $owner_id = 19;
+        $request_query = "SELECT * FROM tbl_issues WHERE issue_owner_id = '$owner_id'";
+        $service_array = $model_instance->getData($request_query);
+        return $this->response->setJSON($service_array);
+    }
 }

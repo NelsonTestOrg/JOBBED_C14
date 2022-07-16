@@ -14,7 +14,6 @@ body {
   border-radius: 3px;
   height: fit-content;
   padding: 1rem;
-
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
@@ -117,6 +116,18 @@ body {
   text-align: center;
   margin: 0.5rem;
 }
+.ctg-span-w {
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+
+  border: 1px solid #fff;
+  color: black;
+  border-radius: 20px;
+  width: fit-content;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem;
+}
 .ctg-span:hover {
   background-color: #d9d9d9;
   border: 1px solid black;
@@ -150,6 +161,9 @@ body {
   height: 7vh;
   object-fit: contain;
 }
+.h-fit {
+  height: fit-content;
+}
 .ud {
   display: inline-flex;
   flex-direction: column;
@@ -163,6 +177,24 @@ body {
 }
 .jsa {
   justify-content: space-around;
+}
+.jcs {
+  justify-content: start;
+}
+.jcc {
+  justify-content: center;
+}
+.aic {
+  align-items: center;
+}
+.bg-grey {
+  background-color: #d9d9d9;
+}
+.bg-white {
+  background-color: white;
+}
+.w-fc {
+  width: fit-content;
 }
 .logout-div {
   width: 100%;
@@ -185,4 +217,57 @@ body {
 }
 .br {
   color: #8b4513;
+}
+.bgw {
+  background-color: white;
+}
+.c-3 {
+  border-radius: 3px;
+}
+.t-head {
+  width: 100%;
+  text-align: center;
+}
+.t-ac{
+    text-align: center;
+}
+.list {
+  height: 74vh;
+  overflow-y: scroll;
+}
+.list::-webkit-scrollbar {
+  width: 0.5vw;
+}
+.list::-webkit-scrollbar-thumb {
+  background-color: #696969;
+  border-radius: 20px;
+}
+.list::-webkit-scrollbar-track {
+  background-color: white;
+}
+.operation-message {
+  display: none;
+  position: fixed;
+  top: 10vh;
+  flex-direction: row;
+  border-radius: 5px;
+  width: 50%;
+  margin-block: 1rem;
+  padding: 1rem;
+  text-align: start;
+}
+.success {
+  background-color: #d4edda;
+  color: #325632;
+  border: 1px solid #325632;
+}
+.warning {
+  background-color: #fff3cd;
+  color: #877840;
+  border: 1px solid #877840;
+}
+.error {
+  background-color: #f7d7da;
+  color: #9e726b;
+  border: 1px solid #9e726b;
 }

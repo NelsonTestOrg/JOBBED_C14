@@ -21,4 +21,17 @@ class user_model extends Model
 
         return $login_result->getRowArray();
     }
+    public function post_issue($issue_owner_id, $issue_category, $issue_location_id, $issue_details, $issue_map_location)
+    {
+        $issue_status_id = 1;
+        $db = db_connect();
+        $post_result = $db->query("INSERT INTO tbl_issues (issue_owner_id, issue_category, issue_location, issue_details, issue_map_location, issue_status) VALUES('$issue_owner_id', '$issue_category','$issue_location_id','$issue_details','$issue_map_location','$issue_status_id')");
+        return $post_result;
+    }
+    public function getData($sql_query)
+    {
+        $db = db_connect();
+        $data_values = $db->query($sql_query);
+        return $data_values->getResultArray();
+    }
 }
