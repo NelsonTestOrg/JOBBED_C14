@@ -36,6 +36,7 @@ $routes->get('services', 'Home::services');
 $routes->get('profile', 'Home::profile');
 $routes->get('request', 'Home::request');
 $routes->get('categories', 'Home::categories');
+$routes->get('workerHome', 'Home::workerHome');
 $routes->get('logout', 'Home::logout');
 
 /*

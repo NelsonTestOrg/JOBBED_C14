@@ -31,4 +31,7 @@ class Home extends BaseController
         $session->destroy();
         return view('UI/home');
     }
+    public function workerHome(){
+        return view('UI_worker/workerHome.php');
+    }
 }

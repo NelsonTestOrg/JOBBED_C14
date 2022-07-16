@@ -24,13 +24,13 @@ $session = session();
                     echo " <a href='request'>
                     <button class='btn btn-primary w-100'>
                         POST ISSUE
-                        <i class='fa-solid fa-file-circle-plus'></i>
+                        <i class='fa-solid fa-file-circle-plus mx-3'></i>
                     </button>
                 </a>";
                 } else {
                     echo "<button class='btn btn-primary w-25' id='request'>
                         POST ISSUE
-                        <i class='fa-solid fa-file-circle-plus'></i>
+                        <i class='fa-solid fa-file-circle-plus mx-3'></i>
                     </button>";
                 }
                 ?>
@@ -39,13 +39,13 @@ $session = session();
                     echo " <a href='profile'>
                     <button class='btn btn-warning w-100'>
                         VIEW PENDING ORDERS
-                        <i class='fa-solid fa-bell'></i>
+                        <i class='fa-solid fa-bell mx-3'></i>
                     </button>
                 </a>";
                 } else {
                     echo "<button class='btn btn-warning w-25 mx-4' id='request2'>
                     VIEW PENDING ORDERS
-                    <i class='fa-solid fa-bell'></i>
+                    <i class='fa-solid fa-bell mx-3'></i>
                 </button>";
                 }
                 ?>
@@ -93,6 +93,7 @@ $session = session();
         </div>
     </section>
     <?php include("module/footer.php"); ?>
+    <script src="js/main.js"></script>
     <script>
         $(document).on('click', '#request', function() {
             $('#warning').fadeIn('slow', function() {
