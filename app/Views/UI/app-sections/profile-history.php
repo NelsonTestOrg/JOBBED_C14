@@ -5,17 +5,14 @@
     </div>
     <hr>
     <div class="history-table-div">
-        <table class="table">
-            <thead>
+        <table class="tableau">
+            <thead class="bb-black p-sticky bg-white">
                 <tr class="w-100">
-                    <td>
+                    <td class="w-sm">
                         <h6>#</h6>
                     </td>
                     <td>
                         <h6>Issue</h6>
-                    </td>
-                    <td>
-                        <h6>Lifespan</h6>
                     </td>
                     <td>
                         <h6>Status</h6>
@@ -28,12 +25,8 @@
                     </td>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td class="py-4">
-                        No available history
-                    </td>
-                </tr>
+            <tbody id="user_history">
+
             </tbody>
         </table>
     </div>

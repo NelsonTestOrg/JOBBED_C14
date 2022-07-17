@@ -9,6 +9,9 @@
 <!-- plain css importing link -->
 <link rel="stylesheet" href="css/w_style.css">
 
+<!-- tab icon -->
+<link rel="icon" href="images/Gspot.png" type="image/x-icon">
+
 <!-- fontawesome icons -->
 <script src="https://kit.fontawesome.com/db540a34d6.js" crossorigin="anonymous"></script>
 

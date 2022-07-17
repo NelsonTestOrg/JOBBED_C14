@@ -36,7 +36,9 @@ $routes->get('services', 'Home::services');
 $routes->get('profile', 'Home::profile');
 $routes->get('request', 'Home::request');
 $routes->get('categories', 'Home::categories');
-$routes->get('workerHome', 'Home::workerHome');
+$routes->get('activeJobs', 'Home::activeJobs');
+$routes->get('browseJobs', 'Home::browseJobs');
+$routes->get('jobRequests', 'Home::jobRequests');
 $routes->get('logout', 'Home::logout');
 
 /*

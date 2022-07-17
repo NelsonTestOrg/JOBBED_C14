@@ -1,0 +1,26 @@
+CRITICAL - 2022-07-17 07:16:40 --> include(../UI/module/footer.php): failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\jobbed\app\Views\UI_worker\browseJobs.php(502): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../UI/m...', 'C:\\xampp\\htdocs...', 502, Array)
+#1 C:\xampp\htdocs\jobbed\app\Views\UI_worker\browseJobs.php(502): include()
+#2 C:\xampp\htdocs\jobbed\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\jobbed\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\jobbed\system\Common.php(1089): CodeIgniter\View\View->render('UI_worker/brows...', Array, true)
+#5 C:\xampp\htdocs\jobbed\app\Controllers\Home.php(35): view('UI_worker/brows...')
+#6 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\Home->browseJobs()
+#7 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-07-17 07:16:56 --> include(./UI/module/footer.php): failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\jobbed\app\Views\UI_worker\browseJobs.php(502): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(./UI/mo...', 'C:\\xampp\\htdocs...', 502, Array)
+#1 C:\xampp\htdocs\jobbed\app\Views\UI_worker\browseJobs.php(502): include()
+#2 C:\xampp\htdocs\jobbed\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\jobbed\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\jobbed\system\Common.php(1089): CodeIgniter\View\View->render('UI_worker/brows...', Array, true)
+#5 C:\xampp\htdocs\jobbed\app\Controllers\Home.php(35): view('UI_worker/brows...')
+#6 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\Home->browseJobs()
+#7 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}

@@ -1,12 +1,8 @@
 <div class="data" id="pd_div">
-    <div class="buttons-div">
-        <button class="btn btn-dark">
+    <div class="buttons-div lr jcc aic">
+        <button class="btn btn-dark w-50">
             <i class="fa-solid fa-circle-user px-2"></i>
             My Details
-        </button>
-        <button class="btn btn-dark">
-            <i class="fa-solid fa-key px-2"></i>
-            Change Password
         </button>
     </div>
     <div class="my-profile">

@@ -142,9 +142,34 @@ class data_handling extends BaseController
     public function getPendingIssues()
     {
         $model_instance = new user_model();
-        $owner_id = 19;
-        $request_query = "SELECT * FROM tbl_issues WHERE issue_owner_id = '$owner_id'";
+        $owner_id = $this->request->getPost('user_id');
+        $request_query = "SELECT tbl_services.service_name , tbl_service_location.location_name, tbl_issues.* FROM tbl_issues INNER JOIN tbl_services ON tbl_issues.issue_category = tbl_services.service_id INNER JOIN tbl_service_location ON tbl_issues.issue_location = tbl_service_location.location_id WHERE tbl_issues.issue_owner_id ='$owner_id' AND tbl_issues.issue_status = 1";
         $service_array = $model_instance->getData($request_query);
         return $this->response->setJSON($service_array);
+    }
+    public function getRequestData()
+    {
+        $model_instance = new user_model();
+        $issue_id = $this->request->getPost('issue_id');
+        $request_query = "SELECT tbl_requests.request_bidder_id,tbl_requests.request_bid_amt FROM tbl_issues INNER JOIN tbl_requests ON tbl_requests.request_issue_id = tbl_issues.issue_id WHERE tbl_issues.issue_id = '$issue_id'";
+        $service_array = $model_instance->getData($request_query);
+        return $this->response->setJSON($service_array);
+    }
+    public function getHistory()
+    {
+        $model_instance = new user_model();
+        $owner_id = $this->request->getPost('user_id');
+        $request_query = "SELECT tbl_users.users_name,tbl_services.service_name,tbl_service_location.location_name, tbl_issues.* FROM tbl_issues INNER JOIN tbl_users ON tbl_issues.issue_handler_id = tbl_users.user_id INNER JOIN tbl_services ON tbl_issues.issue_category = tbl_services.service_id INNER JOIN tbl_service_location ON tbl_issues.issue_location = tbl_service_location.location_id WHERE tbl_issues.issue_owner_id = '$owner_id' AND tbl_issues.issue_status = 3;";
+        $service_array = $model_instance->getData($request_query);
+        return $this->response->setJSON($service_array);
+    }
+
+    public function getFreeJobs()
+    {
+        $model_instance = new user_model();
+        // $user_id = $this ->request->getPost('user_id');
+        $request_query = "SELECT * FROM tbl_issues";
+        $result_array = $model_instance->getData($request_query);
+        return $this->response->setJSON($result_array);
     }
 }

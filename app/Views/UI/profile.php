@@ -24,6 +24,7 @@ $session = session();
             </div>
         </div>
     </section>
+    <?php include("module/user.php"); ?>
     <?php include("module/footer.php"); ?>
     <script>
         var pd_btn = document.getElementById("pd_btn");
@@ -52,16 +53,113 @@ $session = session();
 
         $(document).ready(function() {
             displayPendingIssues();
+            displayHistory();
         })
 
         function displayPendingIssues() {
+            var data = {
+                'user_id': $('#user_id_public').val(),
+            }
+
             $.ajax({
                 url: "<?php echo base_url('data_handling/getPendingIssues') ?>",
-                method: 'GET',
+                method: 'POST',
+                data: data,
                 success: function(response) {
                     $.each(response, function(key, value) {
-                        $("#issue_category").append(
-                            "<option value =" + value.service_id + ">" + value.service_name + "</option>"
+                            $("#pending-issues").append(
+                                " <tr class='py-4 bb-black'>" +
+                                "   <td class='w-sm br-black ud aic jcc'> IS /" + value.issue_id + "</td>" +
+                                "   <td>" +
+                                "       <div class='issue-card ud px-4 w-100 '>" +
+                                "         <input value='" + value.issue_id + "' class='hidden' id='issue_id'>  " +
+                                "           <h5 class='ta-start px-1 py-0'>" + value.service_name + " , " + value.location_name + "</h5>    " +
+                                "           <p class='ta-start w-100 px-1'>" + value.issue_details + "</p>" +
+                                "       </div>" +
+                                "   </td>" +
+                                "   <td class='w-md'>" + value.issue_map_location + "</td>" +
+                                "   <td class='s-down' id='bidder_details'>" +
+                                "   </td>" +
+                                "   <td class='w-fit'>" +
+                                "       <div class='ud w-md aic'>" +
+                                "           <button class='btn btn-warning w-50 my-1'> <i class='fa-solid fa-pen-to-square'></i> Edit</button>" +
+                                "           <button class='btn btn-danger w-50 my-1'> <i class='fa-solid fa-trash-can'></i> Delete Issue </button>" +
+                                "       </div>" +
+                                "   </td>" +
+                                "</tr>"
+                            )
+                        },
+                        appendRequests()
+
+                    )
+                }
+            })
+
+
+        }
+
+        function appendRequests() {
+            var issue_id = {
+                'issue_id': $('#issue_id').val(),
+            }
+            $.ajax({
+                url: "<?php echo base_url('data_handling/getRequestData') ?>",
+                method: 'POST',
+                data: issue_id,
+                success: function(result) {
+                    $.each(response, function(key, value) {
+                        $("#bidder-details").append(
+                            "       <div class='bid-profile bg-dark my-1 ud w-75 aic p-1' >" +
+                            "           <div class='w-img lr jsb w-100'>" +
+                            "               <img src='images/man.png' class='img-sm'>" +
+                            "               <div class='w-details ud w-50 ta-start'>" +
+                            "                   <p class='m-0'>" + value.request_bidder_id + "</p>" +
+                            "                   <span>Bid Price: <b>Ksh. " + value.requst_bid_amt + "</b></span>" +
+                            "                   <a href='' class='td-none'>View Profile</a>" +
+                            "               </div>" +
+                            "           </div>" +
+                            "           <div class='w-100 action-btn lr p-1'>" +
+                            "               <button class='btn btn-success mx-1 w-50'><i class='fa-solid fa-phone mx-2'></i>Engage</button>" +
+                            "               <button class='btn btn-danger mx-1 w-50'><i class='fa-solid fa-link-slash mx-2'></i>Turn down</button>" +
+                            "           </div>" +
+                            "       </div>"
+
+                        )
+                    })
+                }
+            })
+        }
+
+        function displayHistory() {
+            var data = {
+                'user_id': $('#user_id_public').val(),
+            }
+
+            $.ajax({
+                url: "<?php echo base_url('data_handling/getHistory') ?>",
+                method: 'POST',
+                data: data,
+                success: function(response) {
+                    $.each(response, function(key, value) {
+                        $("#user_history").append(
+                            " <tr class='py-4 bb-black'>" +
+                            "   <td class='w-sm br-black aic'> IS /" + value.issue_id + "</td>" +
+                            "   <td>" +
+                            "       <div class='issue-card ud px-4 w-100 '>" +
+                            "         <input value='" + value.issue_id + "' class='hidden' id='issue_id'>  " +
+                            "           <h5 class='ta-start px-1 py-0'>" + value.service_name + " , " + value.location_name + "</h5>    " +
+                            "           <p class='ta-start w-100 px-1'>" + value.issue_details + "</p>" +
+                            "       </div>" +
+                            "   </td>" +
+                            "   <td class='w-md'>Completed</td>" +
+                            "   <td>" + value.users_name +
+                            "   </td>" +
+                            "   <td class='w-fit'>" +
+                            "       <div class='ud w-md aic'>" +
+                            "           <button class='btn btn-danger w-50 my-1'> <i class='fa-solid fa-trash-can'></i> Delete Issue </button>" +
+                            "       </div>" +
+                            "   </td>" +
+                            "</tr>"
                         )
                     })
                 }
