@@ -31,13 +31,40 @@ class Home extends BaseController
         $session->destroy();
         return view('UI/home');
     }
-    public function browseJobs(){
+    public function browseJobs()
+    {
         return view('UI_worker/browseJobs.php');
     }
-    public function activeJobs(){
+    public function activeJobs()
+    {
         return view('UI_worker/activeJobs.php');
     }
-    public function jobRequests(){
+    public function jobRequests()
+    {
         return view('UI_worker/jobRequests.php');
+    }
+    public function workerLogin()
+    {
+        return view('UI_worker/worker_login.php');
+    }
+    public function workerRegister()
+    {
+        return view('UI_worker/worker_register.php');
+    }
+    public function admin_home()
+    {
+        return view('UI_admin/admin_home.php');
+    }
+    public function admin_profile()
+    {
+        return view('UI_admin/admin_profile.php');
+    }
+    public function admin_request()
+    {
+        return view('UI_admin/admin_request.php');
+    }
+    public function admin_issues()
+    {
+        return view('UI_admin/admin_issues.php');
     }
 }

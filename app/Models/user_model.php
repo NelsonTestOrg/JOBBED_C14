@@ -21,6 +21,13 @@ class user_model extends Model
 
         return $login_result->getRowArray();
     }
+    public function loginworker($login_email)
+    {
+        $db = db_connect();
+        $login_result = $db->query("SELECT * FROM tbl_users WHERE user_email = '$login_email' AND user_role_id = 2 ");
+
+        return $login_result->getRowArray();
+    }
     public function post_issue($issue_owner_id, $issue_category, $issue_location_id, $issue_details, $issue_map_location)
     {
         $issue_status_id = 1;

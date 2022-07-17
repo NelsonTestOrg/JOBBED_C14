@@ -65,9 +65,6 @@ class data_handling extends BaseController
             $hashed_password = password_hash($password, PASSWORD_BCRYPT);
             $role_id = '1';
 
-
-
-
             $my_user_reg = new user_model();
             $result = $my_user_reg->add_user($username, $email, $hashed_password, $role_id);
 
@@ -100,6 +97,33 @@ class data_handling extends BaseController
         ];
 
         if (password_verify($login_pass, $hashed_pass)) {
+            $sesion->set($user_data);
+            echo 1;
+        } else {
+            echo 0;
+        }
+    }
+    public function workerLogin()
+    {
+        $sesion = session();
+        $login_email = $this->request->getPost("worker_email");
+        $login_pass = $this->request->getPost("worker_password");
+
+        $user_login = new user_model();
+        $login_res = $user_login->loginworker($login_email);
+        $hashed_pass = $login_res['user_password'];
+        $db_uname = $login_res['users_name'];
+        $db_uID = $login_res['user_id'];
+        $db_email = $login_res['user_email'];
+
+        $user_data = [
+            'user_name' => $db_uname,
+            'user_id' => $db_uID,
+            'user_email' => $db_email
+        ];
+
+        if (password_verify($login_pass, $hashed_pass)) {
+            session_reset();
             $sesion->set($user_data);
             echo 1;
         } else {
@@ -167,9 +191,27 @@ class data_handling extends BaseController
     public function getFreeJobs()
     {
         $model_instance = new user_model();
-        // $user_id = $this ->request->getPost('user_id');
-        $request_query = "SELECT * FROM tbl_issues";
+        $current_user_id = $this->request->getPost('user_id');
+        $request_query = "SELECT tbl_users.users_name, tbl_service_location.location_name, tbl_services.service_name, tbl_issues.* FROM tbl_issues INNER JOIN tbl_service_location ON tbl_issues.issue_location = tbl_service_location.location_id INNER JOIN tbl_users ON tbl_issues.issue_owner_id = tbl_users.user_id INNER JOIN tbl_services ON tbl_issues.issue_category = tbl_services.service_id WHERE tbl_issues.issue_status = 1 AND tbl_issues.issue_owner_id != '$current_user_id' ;";
         $result_array = $model_instance->getData($request_query);
         return $this->response->setJSON($result_array);
     }
+    public function getActiveJobs()
+    {
+        $model_instance = new user_model();
+        $current_user_id = $this->request->getPost('user_id');
+        $request_query = "SELECT tbl_users.users_name, tbl_service_location.location_name, tbl_services.service_name, tbl_issues.* FROM tbl_issues INNER JOIN tbl_service_location ON tbl_issues.issue_location = tbl_service_location.location_id INNER JOIN tbl_users ON tbl_issues.issue_owner_id = tbl_users.user_id INNER JOIN tbl_services ON tbl_issues.issue_category = tbl_services.service_id WHERE tbl_issues.issue_status = 2 AND tbl_issues.issue_handler_id = '$current_user_id' ;";
+        $result_array = $model_instance->getData($request_query);
+        return $this->response->setJSON($result_array);
+    }
+    public function getPendingJobs()
+    {
+        $model_instance = new user_model();
+        $current_user_id = $this->request->getPost('user_id');
+        $request_query = "SELECT tbl_users.users_name, tbl_service_location.location_name, tbl_services.service_name, tbl_issues.* FROM tbl_issues INNER JOIN tbl_service_location ON tbl_issues.issue_location = tbl_service_location.location_id INNER JOIN tbl_users ON tbl_issues.issue_owner_id = tbl_users.user_id INNER JOIN tbl_services ON tbl_issues.issue_category = tbl_services.service_id WHERE tbl_issues.issue_status = 2 AND tbl_issues.issue_handler_id = '$current_user_id' ;";
+        $result_array = $model_instance->getData($request_query);
+        return $this->response->setJSON($result_array);
+    }
+    
+
 }

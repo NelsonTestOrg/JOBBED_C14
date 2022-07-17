@@ -40,7 +40,7 @@
                 <h3>Resources</h3>
             </li>
             <li>
-                <h6><a href="<?php echo base_url("browseJobs"); ?>">Get Hired </a></h6>
+                <h6><a href="<?php echo base_url("workerLogin"); ?>">Get Hired </a></h6>
             </li>
             <li>
                 <h6>Find A HandyMan</h6>

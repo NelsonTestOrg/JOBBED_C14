@@ -1,0 +1,18 @@
+.lr
+{
+    display: inline-flex;
+    flex-direction: row;
+}
+.ud{
+    display: inline-flex;
+    flex-direction: column;
+}
+.jcc{
+    justify-content: center;
+}
+.jsb{
+    justify-content: space-between;
+}
+.jsa{
+    justify-content: space-around;
+}

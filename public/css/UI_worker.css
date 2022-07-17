@@ -66,6 +66,12 @@ body {
   height: 13vh;
   object-fit: contain;
 }
+
+.img-xsm {
+  width: 5vw;
+  height: 7vh;
+  object-fit: contain;
+}
 .worker-profile {
   width: 100%;
   display: inline-flex;
@@ -79,6 +85,9 @@ body {
   flex-direction: column;
   justify-content: start;
   text-align: start;
+}
+.c-w {
+  color: white;
 }
 
 .rating {
@@ -263,6 +272,17 @@ body {
 .list::-webkit-scrollbar-track {
   background-color: white;
 }
+.table-holder::-webkit-scrollbar {
+  width: 0.5vw;
+}
+.table-holder::-webkit-scrollbar-thumb {
+  background-color: #4d4c4d;
+  border-radius: 20px;
+}
+.table-holder::-webkit-scrollbar-track {
+  background-color: #d9d9d9;
+}
+
 .operation-message {
   display: none;
   position: fixed;
@@ -288,4 +308,80 @@ body {
   background-color: #f7d7da;
   color: #9e726b;
   border: 1px solid #9e726b;
+}
+.bg-man {
+  background: url("../images/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-clear {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: fit-content;
+}
+.h-full {
+  height: 100vh;
+}
+.hidden {
+  display: none;
+}
+.tx-uc {
+  text-transform: uppercase;
+}
+
+.bg-dark {
+  background-color: #4d4c4d;
+}
+h5 {
+  font-family: "Dosis", sans-serif;
+}
+.bl-white {
+  border-left: 1px solid white;
+}
+.bb-white {
+  border-bottom: 1.5px solid white;
+}
+.b-white {
+  border: 1px solid white;
+}
+.p-fixed {
+  position: fixed;
+}
+.h-avail {
+  height: -webkit-fill-available;
+}
+.h-80 {
+  height: 85vh;
+}
+.page-head {
+  width: 100%;
+  margin-top: 0;
+  padding: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.page-head h1 {
+  text-transform: uppercase;
+  font-family: "Antic Slab", serif;
+  letter-spacing: 1rem;
+  padding: 0;
+  font-size: 4vh;
+  color: black;
+}
+.mt-45 {
+  margin-top: 5rem;
+}
+.line-sm {
+  background-color: chocolate;
+  width: 20%;
+  height: 2px;
+}
+.p-sticky {
+  position: sticky;
+  top: 0;
+}
+.table-holder {
+  height: 65vh;
+  overflow-y: scroll;
 }

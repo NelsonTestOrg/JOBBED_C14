@@ -7,13 +7,17 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 <!-- plain css importing link -->
-<link rel="stylesheet" href="css/w_style.css">
+<link rel="stylesheet" href="css/UI_worker.css">
 
 <!-- tab icon -->
 <link rel="icon" href="images/Gspot.png" type="image/x-icon">
 
 <!-- fontawesome icons -->
 <script src="https://kit.fontawesome.com/db540a34d6.js" crossorigin="anonymous"></script>
+
+
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 <!-- google fonts  -->
 <link rel="preconnect" href="https://fonts.googleapis.com">

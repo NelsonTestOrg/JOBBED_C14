@@ -39,6 +39,12 @@ $routes->get('categories', 'Home::categories');
 $routes->get('activeJobs', 'Home::activeJobs');
 $routes->get('browseJobs', 'Home::browseJobs');
 $routes->get('jobRequests', 'Home::jobRequests');
+$routes->get('workerLogin', 'Home::workerLogin');
+$routes->get('workerRegister', 'Home::workerRegister');
+$routes->get('admin_home', 'Home::admin_home');
+$routes->get('admin_profile', 'Home::admin_profile');
+$routes->get('admin_request', 'Home::admin_request');
+$routes->get('admin_issues', 'Home::admin_issues');
 $routes->get('logout', 'Home::logout');
 
 /*

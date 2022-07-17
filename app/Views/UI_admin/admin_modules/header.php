@@ -7,8 +7,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Antic+Slab&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Dosis&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
 <!-- css -->
-<link rel="stylesheet" href="css/UI.css">
+<link rel="stylesheet" href="css/UI_worker.css">
 
 <!-- fontawesome icons -->
 <script src="https://kit.fontawesome.com/db540a34d6.js" crossorigin="anonymous"></script>
