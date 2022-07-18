@@ -51,7 +51,7 @@ $session = session();
                                     <td> <b> ACTIONS</b></td>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="users">
                                 <tr>
                                     <td>30</td>
                                     <td>Brathwaite Kinuthia</td>
@@ -67,4 +67,57 @@ $session = session();
             </div>
         </section>
     </section>
+
+    <script>
+        //registration procedure
+        $(document).ready(function() {
+            displayUsers();
+        });
+
+        function displayUsers() {
+            $.ajax({
+                url: "<?php echo base_url('data_handling/getUsers') ?>",
+                method: 'GET',
+                success: function(response) {
+                    $.each(response, function(key, value) {
+                        $("#users").append(
+                            "<tr>" +
+                            "   <td>" + value.user_id + "</td>" +
+                            "   <td>" + value.users_name + "</td>" +
+                            "   <td>" + value.user_email + "</td>" +
+                            "   <td>" + value.role_name + "</td>" +
+                            "   <td><button class='btn btn-danger delete-user' data-id='" + value.user_id + "' ><i class='fa-solid fa-trash-can'></i></button></td>" +
+                            "</tr>"
+                        )
+                    })
+                }
+            })
+
+        }
+        $(document).on('click', '.delete-user', function() {
+            var user_id = $(this).data('id');
+            $.ajax({
+                method: "POST",
+                url: "<?php echo base_url('data_handling/deleteUser') ?>",
+                data: {
+                    user_id: user_id
+                },
+                success: function(response) {
+                    if (response = 1) {
+                        $('#users').html("");
+                        alert("User deleted successfully!")
+                        displayUsers();
+                    } else if (response = 0) {
+                        alert('Error deleting user.They may be linked to an active job.');
+                        $('#users').html("");
+                        displayUsers();
+                    } else {
+                        alert(response);
+
+                    }
+                }
+
+            })
+        })
+    </script>
 </body>

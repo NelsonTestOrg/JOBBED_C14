@@ -3,7 +3,9 @@
         <a href="admin_home" class="w-100"><button class="btn w-100 btn-secondary p-3 my-2">View Users</button></a>
         <a href="admin_issues" class="w-100"><button class="btn btn-secondary p-3 my-2 w-100">View Issues</button></a>
         <a href="admin_request" class="w-100"><button class="btn btn-secondary p-3 my-2 w-100">View Requests</button></a>
-        <a href="admin_profile" class="w-100"><button class="btn btn-secondary p-3 my-2 w-100">My Profile</button></a>
+        <a href="adminServices" class="w-100"><button class="btn btn-secondary p-3 my-2 w-100">View Services</button></a>
+        <a href="adminServiceAdd" class="w-100"><button class="btn btn-secondary p-3 my-2 w-100">Add Services</button></a>
+        <a href="admin_profile" class="w-100"><button class="btn btn-secondary p-3 my-2 w-100">View Applications</button></a>
     </div>
     <div class="bt h-25">
         <div class="logout w-100 jcc aic p-3">

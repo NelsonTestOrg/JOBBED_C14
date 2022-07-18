@@ -304,6 +304,43 @@ body {
   color: #877840;
   border: 1px solid #877840;
 }
+.completed {
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  color: white;
+  border: 1px solid purple;
+  background-color: purple;
+  border-radius: 20px;
+
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem;
+}
+.pending {
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  color: white;
+  border: 1px solid #877840;
+  background-color: #cea204;
+  border-radius: 20px;
+
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem;
+}
+.active {
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  color: white;
+  border: 1px solid #325632;
+  background-color: #325632;
+  border-radius: 20px;
+
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem;
+}
+
 .error {
   background-color: #f7d7da;
   color: #9e726b;
@@ -384,4 +421,47 @@ h5 {
 .table-holder {
   height: 65vh;
   overflow-y: scroll;
+}
+.img-lg {
+  width: 20vw;
+  height: 25vh;
+  object-fit: contain;
+}
+.bd-dark {
+  border: 1px solid #4d4c4d;
+  border-radius: 3px;
+  box-shadow: 0px 0px 8px black;
+}
+.card-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.category-item {
+  transition: transform 0.2s;
+  width: fit-content;
+  height: fit-content;
+  justify-self: center;
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+.category-item:hover {
+  box-shadow: 0px 0px 10px black;
+  transform: scale(1.1);
+}
+.category-item img {
+  width: 200px;
+  object-fit: contain;
+}
+.h-65 {
+  height: 65vh;
+  overflow-y: scroll;
+}
+.tt-uc {
+  text-transform: uppercase;
 }

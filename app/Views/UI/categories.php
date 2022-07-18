@@ -23,118 +23,38 @@ $session = session();
             <div class="services-display">
                 <div class="category-toggle">
                     <button>
-                        Outdoors
-                    </button>
-                    <button>
-                        Indoors
+                        Our services
                     </button>
                 </div>
-                <div class="card-grid">
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                    <div class="category-item">
-                        <img src="images/gardening.png" alt="">
-                        <h2>Gardening</h2>
-                        <button class="btn btn-success w-100 m-1">Post Issue</button>
-                    </div>
-                </div>
+                <div class="card-grid" id="service_grid"></div>
             </div>
 
         </div>
 
     </section>
     <?php include("module/footer.php"); ?>
+    <script>
+        $(document).ready(function() {
+            displayServices();
+        });
+
+        function displayServices() {
+            $.ajax({
+                url: "<?php echo base_url('data_handling/getServices') ?>",
+                method: 'GET',
+                success: function(response) {
+                    $.each(response, function(key, value) {
+                        $("#service_grid").append(
+                            "<div class='category-item'>" +
+                            "   <img src='images/gardening.png' alt=''>" +
+                            "   <h3 class='tt-uc'>" + value.service_name + "</h3>" +
+                            "   <button class='btn btn-success w-100 m-1' id='" + value.service_id + "' >Post Issue</button>" +
+                            "</div>"
+                        )
+                    })
+                }
+            })
+
+        }
+    </script>
 </body>

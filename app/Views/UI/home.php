@@ -27,15 +27,12 @@ $session = session();
             </h4>
         </div>
         <div class="search-pane p-4 w-100">
-            <select class="form-select form-select-lg w-50 search-option">
+            <select class="form-select form-select-lg w-50 search-option" id="services">
                 <option selected>What services are you looking for?</option>
-                <option value="1">Service One</option>
-                <option value="2">Service Two</option>
-                <option value="3">Service Three</option>
             </select>
-            <button class="btn btn-primary mx-2">
-                Let's get connected
-            </button>
+            <a href="services"><button class="btn btn-primary mx-2 p-3">
+                    LET'S GET CONNECTED
+                </button></a>
         </div>
     </section>
     <section class="promo-section">
@@ -44,38 +41,26 @@ $session = session();
                 <h3>Popular Services</h3>
             </div>
             <div class="line mx-4"></div>
-            <div class="promo-row">
-                <div class="col-promo">
-                    <div class="card">
-                        <div class="image-container">
-                            <img src="./images/cleaning.jpg" alt="" />
-                        </div>
-                        <div class="card-details">
-                            <h3>Cleaning</h3>
-                            <p>Get the best cleaning services</p>
-                        </div>
+            <div class="promo-row p-4">
+                <div class="popular-card z-2 bg-trans">
+                    <img src="images/cleaning.jpg" alt="" class="img-card" />
+                    <div class="cd bg-trans ud jcc aic z-2 p-2">
+                        <h4 class="tx-uc c-b bold">Cleaning</h4>
+                        <a href="services" class="w-100"><button class="btn btn-outline-dark w-100">See more</button></a>
                     </div>
                 </div>
-                <div class="col-promo">
-                    <div class="card">
-                        <div class="image-container">
-                            <img src="./images/cleaning.jpg" alt="" />
-                        </div>
-                        <div class="card-details">
-                            <h3>Cleaning</h3>
-                            <p>Get the best cleaning services</p>
-                        </div>
+                <div class="popular-card">
+                    <img src="images/elec_home.jpg" alt="" class="img-card" />
+                    <div class="cd bg-trans ud jcc aic z-2 p-2">
+                        <h4 class="tx-uc c-b bold">Electrical</h4>
+                        <a href="services" class="w-100"><button class="btn btn-outline-dark w-100">See more</button></a>
                     </div>
                 </div>
-                <div class="col-promo">
-                    <div class="card">
-                        <div class="image-container">
-                            <img src="./images/cleaning.jpg" alt="" />
-                        </div>
-                        <div class="card-details">
-                            <h3>Cleaning</h3>
-                            <p>Get the best cleaning services</p>
-                        </div>
+                <div class="popular-card">
+                    <img src="images/gardening_home.jpg" alt="" class="img-card" />
+                    <div class="cd bg-trans ud jcc aic z-2 p-2">
+                        <h4 class="tx-uc c-b bold">Gardening</h4>
+                        <a href="services" class="w-100"><button class="btn btn-outline-dark w-100">See more</button></a>
                     </div>
                 </div>
             </div>
@@ -83,16 +68,38 @@ $session = session();
     </section>
     <section class="mid-section" id="mid-section">
         <div class="promo-header m-3 p-4">
-            <h3>Pricing</h3>
+            <h3>Customer Comments</h3>
         </div>
         <div class="line-2 mx-4"></div>
-        <div class="pricing-details p-4">
-            <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores fuga architecto aliquid eum recusandae incidunt cum ut aliquam blanditiis quis. A illum natus deserunt minima iste nisi in, recusandae doloremque.</h4>
-        </div>
-        <div class="button p-4">
-            <button class="btn btn-outline-light w-50">
-                View Prices
-            </button>
+        <div class="comment-holder lr w-100 p-1 jcc">
+            <div class="comment jcc aic ud w-25 p-2">
+                <h4 class="w-100">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores sapiente aliquid quibusdam, minima pariatur optio a aspernatur. At excepturi ullam assumenda eos eveniet nemo amet culpa quod facere, error voluptatum?"</h4>
+                <div class="lr w-100 aic jcc py-2">
+                    <img src="images/person1.jpg" class="img-profile" alt="">
+                    <h3 class="px-2">-Candace Ligma</h3>
+                </div>
+            </div>
+            <div class="comment jcc aic ud w-25 p-2">
+                <h4 class="w-100">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores sapiente aliquid quibusdam, minima pariatur optio a aspernatur. At excepturi ullam assumenda eos eveniet nemo amet culpa quod facere, error voluptatum?"</h4>
+                <div class="lr w-100 aic jcc py-2">
+                    <img src="images/person2.jpg" class="img-profile" alt="">
+                    <h3 class="px-2">-Sigma Chad</h3>
+                </div>
+            </div>
+            <div class="comment jcc aic w-25 ud p-2">
+                <h4 class="w-100">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores sapiente aliquid quibusdam, minima pariatur optio a aspernatur. At excepturi ullam assumenda eos eveniet nemo amet culpa quod facere, error voluptatum?"</h4>
+                <div class="lr w-100 aic jcc py-2">
+                    <img src="images/ThePapaa.jpeg" class="img-profile" alt="">
+                    <h3 class="px-2">-Sir.Gon D.</h3>
+                </div>
+            </div>
+            <div class="comment jcc aic w-25 ud p-2">
+                <h4 class="w-100">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores sapiente aliquid quibusdam, minima pariatur optio a aspernatur. At excepturi ullam assumenda eos eveniet nemo amet culpa quod facere, error voluptatum?"</h4>
+                <div class="lr w-100 aic jcc py-2">
+                    <img src="images/person4.jpg" class="img-profile" alt="">
+                    <h3 class="px-2">-The Man.</h3>
+                </div>
+            </div>
         </div>
 
     </section>
@@ -177,8 +184,23 @@ $session = session();
                 })
             }
         });
-
+        displayServices();
     });
+
+    function displayServices() {
+        $.ajax({
+            url: "<?php echo base_url('data_handling/getServices') ?>",
+            method: 'GET',
+            success: function(response) {
+                $.each(response, function(key, value) {
+                    $("#services").append(
+                        "<option value =" + value.service_id + ">" + value.service_name + "</option>"
+                    )
+                })
+            }
+        })
+
+    }
 </script>
 
 </html>

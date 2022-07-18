@@ -7,6 +7,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Antic+Slab&display=swap" rel="stylesheet">
 
+<!-- Bangers and Dosis Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Dosis&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
 <!-- css -->
 <link rel="stylesheet" href="css/UI.css">
 

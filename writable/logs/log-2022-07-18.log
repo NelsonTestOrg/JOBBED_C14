@@ -1,0 +1,228 @@
+CRITICAL - 2022-07-18 04:43:00 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:02 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:02 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:03 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:03 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:03 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:03 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:03 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:04 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:04 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:04 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:04 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:04 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:04 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:05 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:05 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:05 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:07 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:07 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:07 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:07 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:07 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:08 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:08 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:08 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:08 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:08 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:08 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:08 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:09 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-18 04:43:09 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(832): App\Controllers\data_handling->worker_register()
+#1 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\data_handling))
+#2 C:\xampp\htdocs\jobbed\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\jobbed\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\jobbed\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-07-18 07:45:55 --> Cannot add or update a child row: a foreign key constraint fails (`jobbed`.`tbl_services`, CONSTRAINT `tbl_services_ibfk_1` FOREIGN KEY (`service_location_id`) REFERENCES `tbl_service_location` (`location_id`))
+ERROR - 2022-07-18 13:39:54 --> Cannot delete or update a parent row: a foreign key constraint fails (`jobbed`.`tbl_issues`, CONSTRAINT `tbl_issues_ibfk_3` FOREIGN KEY (`issue_category`) REFERENCES `tbl_services` (`service_id`))
+ERROR - 2022-07-18 13:40:02 --> Cannot delete or update a parent row: a foreign key constraint fails (`jobbed`.`tbl_issues`, CONSTRAINT `tbl_issues_ibfk_3` FOREIGN KEY (`issue_category`) REFERENCES `tbl_services` (`service_id`))
+ERROR - 2022-07-18 13:40:09 --> Cannot delete or update a parent row: a foreign key constraint fails (`jobbed`.`tbl_issues`, CONSTRAINT `tbl_issues_ibfk_3` FOREIGN KEY (`issue_category`) REFERENCES `tbl_services` (`service_id`))
+ERROR - 2022-07-18 13:40:23 --> Cannot delete or update a parent row: a foreign key constraint fails (`jobbed`.`tbl_issues`, CONSTRAINT `tbl_issues_ibfk_3` FOREIGN KEY (`issue_category`) REFERENCES `tbl_services` (`service_id`))
+ERROR - 2022-07-18 13:58:57 --> Cannot delete or update a parent row: a foreign key constraint fails (`jobbed`.`tbl_issues`, CONSTRAINT `tbl_issues_ibfk_5` FOREIGN KEY (`issue_handler_id`) REFERENCES `tbl_users` (`user_id`))
+ERROR - 2022-07-18 13:59:45 --> Cannot delete or update a parent row: a foreign key constraint fails (`jobbed`.`tbl_issues`, CONSTRAINT `tbl_issues_ibfk_3` FOREIGN KEY (`issue_category`) REFERENCES `tbl_services` (`service_id`))
+ERROR - 2022-07-18 13:59:47 --> Cannot delete or update a parent row: a foreign key constraint fails (`jobbed`.`tbl_issues`, CONSTRAINT `tbl_issues_ibfk_3` FOREIGN KEY (`issue_category`) REFERENCES `tbl_services` (`service_id`))
+ERROR - 2022-07-18 13:59:50 --> Cannot delete or update a parent row: a foreign key constraint fails (`jobbed`.`tbl_issues`, CONSTRAINT `tbl_issues_ibfk_3` FOREIGN KEY (`issue_category`) REFERENCES `tbl_services` (`service_id`))
+ERROR - 2022-07-18 14:21:32 --> Cannot delete or update a parent row: a foreign key constraint fails (`jobbed`.`tbl_issues`, CONSTRAINT `tbl_issues_ibfk_2` FOREIGN KEY (`issue_owner_id`) REFERENCES `tbl_users` (`user_id`))
+ERROR - 2022-07-18 14:21:35 --> Cannot delete or update a parent row: a foreign key constraint fails (`jobbed`.`tbl_issues`, CONSTRAINT `tbl_issues_ibfk_2` FOREIGN KEY (`issue_owner_id`) REFERENCES `tbl_users` (`user_id`))

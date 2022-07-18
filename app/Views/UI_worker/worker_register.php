@@ -41,33 +41,33 @@ $session = session();
                 </div>
                 <div class="id_no ud w-50 px-2">
                     <label for="reg_nat_id">National ID no.</label>
-                    <input type="text" class="form-control" name="" id="reg_nat_id">
+                    <input type="number" maxlength="8" class="form-control" name="" id="reg_nat_id">
                 </div>
             </div>
             <div class="address p-4 ud ais w-100">
                 <label for="reg_address">Address:</label>
-                <input type="password" name="reg_address" id="reg_address" class=" w-100 form-control" placeholder="Enter your address here">
+                <input type="text" name="reg_address" id="reg_address" class=" w-100 form-control" placeholder="Enter your address here">
                 <small class="form-text text-muted">Your address will be used to help find jobs within your proximity. </small>
             </div>
             <div class="certs lr w-100 p-3">
                 <div class="conduct ud w-50 px-2">
                     <label for="reg_conduct">Certificate of good conduct:</label>
-                    <input type="file" name="" id="reg_conduct" class="form-control w-100">
+                    <input type="file" name="reg_conduct" id="reg_conduct" class="form-control w-100">
                 </div>
                 <div class="reg_id_photo ud w-50 px-2">
                     <label for="reg_reg_id_photo">Copies of your ID photo:</label>
-                    <input type="file" name="" id="reg_reg_id_photo" class="form-control w-100">
+                    <input type="file" name="reg_id_photo" id="reg_id_photo" class="form-control w-100">
                 </div>
             </div>
             <div class="expertise ud w-100 p-3">
                 <label for="a-o-ex">Area of expertise</label>
-                <select name="a-o-ex" class="form-control" id="reg_expertise">
-                    <option class="p-4" value="1">Manslaughter</option>
+                <select name="a-o-ex" class="form-control" class="expertise_category" id="reg_expertise">
+                    <option selected>Choose your area of expertise</option>
                 </select>
                 <small class="form-text text-muted">Your credentials are 100% secure with us cause we know better.</small>
             </div>
             <div class="lg-btn w-100 p-4">
-                <button class="btn btn-primary w-100" type="submit" id="login_wk"> SUBMIT REGISTRATION REQUEST</button>
+                <button class="btn btn-primary w-100" type="submit" id="submit_register"> SUBMIT REGISTRATION REQUEST</button>
             </div>
             <div class="reg-pas ud aic jcc w-100">
                 <h4>Already have an account?</h4>
@@ -83,32 +83,62 @@ $session = session();
     </section>
 
     <script>
-        $(document).on('click', '#login_wk', function() {
-            if ($.trim($('#worker_email').val()).length == 0 || $.trim($('#worker_password').val()).length == 0) {
-                alert("Invalid lengths!");
+        $(document).ready(function() {
+            displayServices();
+        })
+
+        function displayServices() {
+            $.ajax({
+                url: "<?php echo base_url('data_handling/getServices') ?>",
+                method: 'GET',
+                success: function(response) {
+                    $.each(response, function(key, value) {
+                        $("#reg_expertise").append(
+                            "<option value =" + value.service_id + ">" + value.service_name + "</option>"
+                        )
+                    })
+                }
+            })
+
+        }
+
+        $(document).on('click', '#submit_register', function() {
+            if ($.trim($('#reg_email').val()).length == 0 || $.trim($('#first_name').val()).length == 0) {
+                // $('#warning').fadeIn('slow', function() {
+                //     $('#warning').delay(3000).fadeOut();
+                // });
+                alert("Check your credentials.")
             } else {
                 var data = {
-                    'worker_email': $('#worker_email').val(),
-                    'worker_password': $('#worker_password').val()
+                    'first_name': $('#first_name').val(),
+                    'last_name': $('#last_name').val(),
+                    'reg_email': $('#reg_email').val(),
+                    'phone_number': $('#phone_number').val(),
+                    'reg_nat_id': $('#reg_nat_id').val(),
+                    'reg_address': $('#reg_address').val(),
+                    'reg_conduct': $('#reg_conduct').val(),
+                    'reg_id_photo': $('#reg_id_photo').val(),
+                    'reg_expertise': $('#reg_expertise').val(),
                 };
                 $.ajax({
-                    url: "<?php echo base_url('data_handling/workerLogin') ?>",
+                    url: "<?php echo base_url('data_handling/worker_register') ?>",
                     method: 'POST',
                     data: data,
-                    success: function(login_res) {
-                        if (login_res == 1) {
-                            $('#worker_email').val("");
-                            $('#worker_password').val("");
-                            window.location = 'browseJobs';
+                    success: function(result) {
 
-                        } else if (login_res == 0) {
-                            alert("Some issue");
+                        alert(result);
+                        if (result == 1) {
+                            location.reload();
                         } else {
-                            alert("Deez NUts");
+                            // $('#error').fadeIn('slow', function() {
+                            //     $('#error').delay(3000).fadeOut();
+                            // });
+                            alert("ERROR");
                         }
                     }
                 })
             }
+
         });
     </script>
 </body>

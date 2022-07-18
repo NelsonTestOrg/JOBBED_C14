@@ -1,5 +1,5 @@
 * {
-  font-family: "Nunito", sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 body {
   max-width: 100vw;
@@ -912,8 +912,17 @@ button:hover {
   height: 7vh;
   object-fit: contain;
 }
+.img-profile {
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  object-fit: cover;
+}
 .td-none {
   text-decoration: none;
+}
+.tx-uc {
+  text-transform: uppercase;
 }
 .ta-start {
   text-align: start;
@@ -976,6 +985,9 @@ button:hover {
   background-color: black;
   color: white;
 }
+.c-w {
+  color: white;
+}
 .svc-container {
   width: 100%;
   display: inline-flex;
@@ -1024,4 +1036,33 @@ button:hover {
   width: 7vw;
   height: 5vh;
   object-fit: cover;
+}
+.popular-card {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  height: 25vw;
+  width: 15vw;
+  transition: transform 0.1s;
+}
+.popular-card:hover {
+  transform: scale(1.05);
+}
+.img-card {
+  width: inherit;
+  object-fit: cover;
+  position: absolute;
+  height: inherit;
+  border-radius: 3px;
+}
+.z-2 {
+  z-index: 3;
+}
+.c-b {
+  color: black;
+}
+.bold {
+  font-weight: bold;
+}
+.bg-trans {
+  background-color: rgba(255, 255, 255, 0.5);
 }

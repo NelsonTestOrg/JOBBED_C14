@@ -44,21 +44,16 @@ $session = session();
                         <table class="w-100 table table-striped">
                             <thead class="thead-dark p-sticky p-3 bg-grey">
                                 <tr>
-                                    <td> <b> USER ID </b></td>
-                                    <td> <b> USER NAME </b></td>
-                                    <td> <b> USER EMAIL</b></td>
-                                    <td> <b> USER ROLE</b></td>
+                                    <td> <b> ISSUE ID </b></td>
+                                    <td> <b> ISSUE OWNER </b></td>
+                                    <td> <b> ISSUE CATEGORY</b></td>
+                                    <td> <b> ISSUE DETAILS</b></td>
+                                    <td> <b> ISSUE LOCATION</b></td>
+                                    <td> <b> ISSUE STATUS</b></td>
                                     <td> <b> ACTIONS</b></td>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td>30</td>
-                                    <td>Brathwaite Kinuthia</td>
-                                    <td>kinuthiabrathwaite@gmail.com</td>
-                                    <td>USER_CLIENT</td>
-                                    <td><button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
-                                </tr>
+                            <tbody id="issues">
                             </tbody>
                         </table>
                     </div>
@@ -67,4 +62,58 @@ $session = session();
             </div>
         </section>
     </section>
+
+    <script>
+        $(document).ready(function() {
+            displayIssues();
+        });
+
+        function displayIssues() {
+            $.ajax({
+                url: "<?php echo base_url('data_handling/getIssues') ?>",
+                method: 'GET',
+                success: function(response) {
+                    $.each(response, function(key, value) {
+                        $("#issues").append(
+                            "<tr>" +
+                            "   <td>" + value.issue_id + "</td>" +
+                            "   <td>" + value.users_name + "</td>" +
+                            "   <td>" + value.service_name + ", " + value.location_name + "</td>" +
+                            "   <td class='w-25'>" + value.issue_details + "</td>" +
+                            "   <td>" + value.issue_map_location + "</td>" +
+                            "   <td class='w-25'><span class ='w-100" + value.status_name + "'>" + value.status_name + "</span></td>" +
+                            "   <td><button class='btn btn-danger delete-issue' data-id='" + value.issue_id + "' ><i class='fa-solid fa-trash-can mx-2'></i>TAKE DOWN</button></td>" +
+                            "</tr>"
+                        )
+                    })
+                }
+            })
+
+        }
+        $(document).on('click', '.delete-issue', function() {
+            var issue_id = $(this).data('id');
+            $.ajax({
+                method: "POST",
+                url: "<?php echo base_url('data_handling/deleteIssue') ?>",
+                data: {
+                    issue_id: issue_id
+                },
+                success: function(response) {
+                    if (response = 1) {
+                        $('#issues').html("");
+                        alert("Issue deleted successfully!")
+                        displayIssues();
+                    } else if (response = 0) {
+                        alert('Error deleting issue.It may be linked to an active job.');
+                        $('#issues').html("");
+                        displayIssues();
+                    } else {
+                        alert(response);
+
+                    }
+                }
+
+            })
+        })
+    </script>
 </body>

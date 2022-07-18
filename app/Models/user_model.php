@@ -41,4 +41,10 @@ class user_model extends Model
         $data_values = $db->query($sql_query);
         return $data_values->getResultArray();
     }
+    public function setData($sql_query)
+    {
+        $db = db_connect();
+        $result = $db->query($sql_query);
+        return $result;
+    }
 }
