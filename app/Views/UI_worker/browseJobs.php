@@ -60,17 +60,9 @@ $session = session();
                             "           </div>" +
                             "           <span class='line bg-white'></span>" +
                             "           <div class='stats lr jsb aic px-3 py-2 w-100'>" +
-                            "               <div class='bids aic lr'>" +
-                            "                   <h5>Bids:</h5>" +
-                            "                   <span class='ctg-span-w'>10</span>" +
-                            "               </div>" +
-                            "               <div class='avg lr aic'>" +
-                            "                   <h5>Average bid cost:</h5>" +
-                            "                   <span class='ctg-span-w'>Ksh.500</span>" +
-                            "               </div>" +
-                            "               <div class='b ud aic px-4 w-25'>" +
+                            "               <div class='b lr aic jsa px-4 w-100'>" +
                             "                   <div class='lr w-100 aic jcc p-1'>" +
-                            "                       <label for='bid-amt'><b>Your bid: Ksh. </b></label>" +
+                            "                       <label for='bid-amt'><b>Bid:Ksh. </b></label>" +
                             "                       <input type='number' placeholder='500' class='form-control w-50 mx-1' id='" + value.issue_id + "'>" +
                             "                   </div>" +
                             "                   <button class='btn btn-primary w-100 submit-request' data-id ='" + value.issue_id + "'><i class='fa-solid fa-folder-plus px-2'></i>Submit Request</button>" +
@@ -85,11 +77,13 @@ $session = session();
         }
         $(document).on('click', '.submit-request', function() {
             var service_id = $(this).data('id');
+            var amt_keyed = $('#' + service_id).val();
             var data = {
                 'user_id': $('#user_id').val(),
-                'bid_amount': $('#'.service_id).val(),
+                'bid_amount': amt_keyed,
                 'service_id': service_id
             };
+
             $.ajax({
                 method: "POST",
                 url: "<?php echo base_url('data_handling/addRequest') ?>",

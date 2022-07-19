@@ -78,7 +78,7 @@
                         <img src="images/man.png" alt="">
                     </div>
 
-                    <div class="new-profile form-control m-2 w-50"><input type="file" name="user-new-profile" id="" class="image-picker"></div>
+                    <div class="new-profile form-control m-2 w-50"><input type="file" accept="image/*" name="user-new-profile" id="" class="image-picker"></div>
                 </div>
             </div>
         </div>

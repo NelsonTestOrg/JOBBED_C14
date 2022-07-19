@@ -27,6 +27,9 @@
                         <h6>Location</h6>
                     </td>
                     <td>
+                        <h6>Status</h6>
+                    </td>
+                    <td>
                         <h6>Actions</h6>
                     </td>
                 </tr>

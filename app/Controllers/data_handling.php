@@ -379,4 +379,30 @@ class data_handling extends BaseController
         $service_array = $model_instance->getData($request_query);
         return $this->response->setJSON($service_array);
     }
+    public function acceptRequest()
+    {
+        $model_instance = new user_model();
+        $issue_id = $this->request->getPost('issue_id');
+        $edit_query = "UPDATE tbl_issues SET issue_status = '3' WHERE issue_id = '$issue_id'";
+
+        $data_insertion = $model_instance->setData($edit_query);
+        if ($data_insertion) {
+            echo 1;
+        } else {
+            echo 0;
+        }
+    }
+    public function denyRequest()
+    {
+        $model_instance = new user_model();
+        $issue_id = $this->request->getPost('issue_id');
+        $edit_query = "UPDATE tbl_issues SET issue_status = '1', issue_handler_id = '0' , issue_bid_amt = '0' WHERE issue_id = '$issue_id'";
+
+        $data_insertion = $model_instance->setData($edit_query);
+        if ($data_insertion) {
+            echo 1;
+        } else {
+            echo 0;
+        }
+    }
 }

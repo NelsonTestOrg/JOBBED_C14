@@ -48,7 +48,6 @@ $session = session();
                             "<div class='category-item'>" +
                             "   <img src='assets/" + value.service_photo + "' alt=''>" +
                             "   <h3 class='tt-uc'>" + value.service_name + "</h3>" +
-                            "   <button class='btn btn-success w-100 m-1' id='" + value.service_id + "' >Post Issue</button>" +
                             "</div>"
                         )
                     })
