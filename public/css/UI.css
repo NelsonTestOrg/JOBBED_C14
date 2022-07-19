@@ -910,6 +910,70 @@ button:hover {
 .w-fit {
   width: fit-content;
 }
+.ctg-span {
+  padding: 0.5rem;
+  border: 1px solid #d9d9d9;
+  color: black;
+  border-radius: 20px;
+  width: 150px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem;
+}
+.bg-yellow {
+  background-color: #877840;
+}
+.bg-gold {
+  background-color: #ffc107;
+}
+.completed {
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  color: white;
+  border: 1px solid purple;
+  background-color: purple;
+  border-radius: 20px;
+
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem;
+}
+.pending {
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  color: white;
+  border: 1px solid #877840;
+  background-color: #cea204;
+  border-radius: 20px;
+
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem;
+}
+.active {
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  color: white;
+  border: 1px solid #325632;
+  background-color: #325632;
+  border-radius: 20px;
+
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem;
+}
+.posted {
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  color: white;
+  border: 1px solid #343434;
+  background-color: #696969;
+  border-radius: 20px;
+
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem;
+}
 .w-md {
   width: 15vw;
 }

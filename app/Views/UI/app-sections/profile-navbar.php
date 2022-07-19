@@ -7,10 +7,10 @@
         </div>
         <div class="second-div">
             <ul>
-                <li><button class="btn btn-dark" id="pd_btn">Personal Details</button></li>
-                <li><button class="btn btn-dark" id="pp_btn">Pending Orders</button></li>
-                <li><button class="btn btn-dark" id="pr_btn">Order Requests</button></li>
-                <li><button class="btn btn-dark" id="ph_btn">History</button></li>
+                <li><button class="btn btn-dark tx-uc" id="pd_btn">Personal Details</button></li>
+                <li><button class="btn btn-dark tx-uc" id="pp_btn">All issues</button></li>
+                <li><button class="btn btn-dark tx-uc" id="pr_btn">Order Requests</button></li>
+                <li><button class="btn btn-dark tx-uc" id="ph_btn">History</button></li>
             </ul>
         </div>
     </div>

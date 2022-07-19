@@ -67,7 +67,7 @@ $session = session();
                             "                   <span class='ctg-span bg-yellow'>Ksh. " + value.issue_bid_amt + "</span>" +
                             "               </div>" +
                             "               <div class='b aic px-4'>" +
-                            "                   <button class='btn btn-warning'><i class='fa-solid fa-person-through-window mx-2'></i>End Request</button>" +
+                            "                   <button class='btn btn-warning cancel-request' data-id='" + value.issue_id + "'><i class='fa-solid fa-person-through-window mx-2'></i>End Request</button>" +
                             "               </div>" +
                             "           </div>" +
                             "       </div>" +
@@ -77,5 +77,28 @@ $session = session();
                 }
             })
         }
+        $(document).on('click', '.cancel-request', function() {
+            var issue_id = $(this).data('id');
+            $.ajax({
+                method: "POST",
+                url: "<?php echo base_url('data_handling/denyRequest') ?>",
+                data: {
+                    issue_id: issue_id
+                },
+                success: function(response) {
+                    if (response = 1) {
+                        alert("Request declined successfully!")
+                        location.reload();
+                    } else if (response = 0) {
+                        alert('Error declining the request.');
+                        location.reload();
+                    } else {
+                        alert(response);
+
+                    }
+                }
+
+            })
+        })
     </script>
 </body>

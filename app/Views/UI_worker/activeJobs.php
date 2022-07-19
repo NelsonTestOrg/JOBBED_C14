@@ -66,8 +66,7 @@ $session = session();
                             "                   <span class='ctg-span-w bg-yellow'>Ksh." + value.issue_bid_amt + "</span>" +
                             "               </div>" +
                             "               <div class='b aic px-4'>" +
-                            "                   <button class='btn btn-success mx-1'><i class='fa-solid fa-clipboard-check mx-2'></i>COMPLETE</button>" +
-                            "                   <button class='btn btn-danger'><i class='fa-solid fa-arrow-right-from-bracket mx-2'></i>QUIT JOB</button>" +
+                            "                   <button class='btn btn-success mx-1 complete-request' data-id='" + value.issue_id + "'><i class='fa-solid fa-clipboard-check mx-2'></i>COMPLETE</button>" +
                             "               </div>" +
                             "           </div>" +
                             "       </div>" +
@@ -77,5 +76,29 @@ $session = session();
                 }
             })
         }
+
+        $(document).on('click', '.complete-request', function() {
+            var issue_id = $(this).data('id');
+            $.ajax({
+                method: "POST",
+                url: "<?php echo base_url('data_handling/completeRequest') ?>",
+                data: {
+                    issue_id: issue_id
+                },
+                success: function(response) {
+                    if (response = 1) {
+                        alert("Job completed successfully!")
+                        location.reload();
+                    } else if (response = 0) {
+                        alert('Error declining the job.');
+                        location.reload();
+                    } else {
+                        alert(response);
+
+                    }
+                }
+
+            })
+        })
     </script>
 </body>

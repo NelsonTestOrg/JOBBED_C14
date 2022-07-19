@@ -218,7 +218,7 @@ class data_handling extends BaseController
     {
         $model_instance = new user_model();
         $owner_id = $this->request->getPost('user_id');
-        $request_query = "SELECT tbl_services.service_name , tbl_service_location.location_name, tbl_issues.* FROM tbl_issues INNER JOIN tbl_services ON tbl_issues.issue_category = tbl_services.service_id INNER JOIN tbl_service_location ON tbl_issues.issue_location = tbl_service_location.location_id WHERE tbl_issues.issue_owner_id ='$owner_id' AND tbl_issues.issue_status != 4";
+        $request_query = "SELECT tbl_services.service_name ,tbl_status.status_name, tbl_service_location.location_name, tbl_issues.* FROM tbl_issues INNER JOIN tbl_services ON tbl_issues.issue_category = tbl_services.service_id INNER JOIN tbl_status ON tbl_issues.issue_status = tbl_status.status_id INNER JOIN tbl_service_location ON tbl_issues.issue_location = tbl_service_location.location_id WHERE tbl_issues.issue_owner_id ='$owner_id' AND tbl_issues.issue_status != 4";
         $service_array = $model_instance->getData($request_query);
         return $this->response->setJSON($service_array);
     }
@@ -234,7 +234,7 @@ class data_handling extends BaseController
     {
         $model_instance = new user_model();
         $owner_id = $this->request->getPost('user_id');
-        $request_query = "SELECT tbl_users.users_name,tbl_services.service_name,tbl_service_location.location_name, tbl_issues.* FROM tbl_issues INNER JOIN tbl_users ON tbl_issues.issue_handler_id = tbl_users.user_id INNER JOIN tbl_services ON tbl_issues.issue_category = tbl_services.service_id INNER JOIN tbl_service_location ON tbl_issues.issue_location = tbl_service_location.location_id WHERE tbl_issues.issue_owner_id = '$owner_id' AND tbl_issues.issue_status = 3;";
+        $request_query = "SELECT tbl_users.users_name,tbl_services.service_name,tbl_service_location.location_name, tbl_issues.* FROM tbl_issues INNER JOIN tbl_users ON tbl_issues.issue_handler_id = tbl_users.user_id INNER JOIN tbl_services ON tbl_issues.issue_category = tbl_services.service_id INNER JOIN tbl_service_location ON tbl_issues.issue_location = tbl_service_location.location_id WHERE tbl_issues.issue_owner_id = '$owner_id' AND tbl_issues.issue_status = 4;";
         $service_array = $model_instance->getData($request_query);
         return $this->response->setJSON($service_array);
     }
@@ -343,7 +343,7 @@ class data_handling extends BaseController
     {
         $model_instance = new user_model();
         $issue_id = $this->request->getPost('issue_id');
-        $insert_query = "DELETE FROM tbl_issues WHERE issue_id = '$issue_id'";
+        $insert_query = "DELETE FROM tbl_issues WHERE issue_id = '$issue_id' AND issue_status != 3";
         $service_array = $model_instance->setData($insert_query);
         try {
             if ($service_array) {
@@ -384,6 +384,19 @@ class data_handling extends BaseController
         $model_instance = new user_model();
         $issue_id = $this->request->getPost('issue_id');
         $edit_query = "UPDATE tbl_issues SET issue_status = '3' WHERE issue_id = '$issue_id'";
+
+        $data_insertion = $model_instance->setData($edit_query);
+        if ($data_insertion) {
+            echo 1;
+        } else {
+            echo 0;
+        }
+    }
+    public function completeRequest()
+    {
+        $model_instance = new user_model();
+        $issue_id = $this->request->getPost('issue_id');
+        $edit_query = "UPDATE tbl_issues SET issue_status = '4' WHERE issue_id = '$issue_id'";
 
         $data_insertion = $model_instance->setData($edit_query);
         if ($data_insertion) {

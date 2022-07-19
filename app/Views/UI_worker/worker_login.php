@@ -59,7 +59,6 @@ $session = session();
                     method: 'POST',
                     data: data,
                     success: function(login_res) {
-                        alert(login_res);
                         if (login_res == 2) {
                             $('#worker_email').val("");
                             $('#worker_password').val("");

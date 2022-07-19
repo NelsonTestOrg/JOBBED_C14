@@ -94,6 +94,7 @@ $session = session();
                             "       <p class='ta-start w-100 px-1'>" + value.issue_details + "</p>" +
                             "   </td>" +
                             "   <td class='w-md  ud aic jcc'>" + value.issue_map_location + "</td>" +
+                            "   <td class='w-md  ud aic jcc'><span class='" + value.status_name + "'>" + value.status_name + "</span></td>" +
                             "   <td class='w-fit ud aic jcc'>" +
                             "       <div class='ud w-md aic'>" +
                             "           <button class='btn btn-danger w-50 my-1 delete-issue' data-id='" + value.issue_id + "'> <i class='fa-solid fa-trash-can'></i> Delete Issue </button>" +
@@ -205,7 +206,7 @@ $session = session();
                             "                    </div>" +
                             "                 </td>" +
                             "                 <td class='ud w-md aic jcc'>" +
-                            "                    <button class='btn btn-success w-50 my-1 enagage' data-id='" + value.issue_id + "'><i class='fa-solid fa-phone px-1'></i>ENGAGE</button>" +
+                            "                    <button class='btn btn-success w-50 my-1 engage' data-id='" + value.issue_id + "'><i class='fa-solid fa-phone px-1'></i>ENGAGE</button>" +
                             "                    <button class='btn btn-danger w-50 cancel-request' data-id='" + value.issue_id + "'><i class='fa-solid fa-trash-can px-1'></i>CANCEL</button>" +
                             "                </td>" +
                             "            </tr>"
@@ -253,6 +254,29 @@ $session = session();
                     } else if (response = 0) {
                         alert('Error deleting issue.It may be linked to an active job.');
                         $('#issues').html("");
+                        location.reload();
+                    } else {
+                        alert(response);
+
+                    }
+                }
+
+            })
+        })
+        $(document).on('click', '.engage', function() {
+            var issue_id = $(this).data('id');
+            $.ajax({
+                method: "POST",
+                url: "<?php echo base_url('data_handling/acceptRequest') ?>",
+                data: {
+                    issue_id: issue_id
+                },
+                success: function(response) {
+                    if (response = 1) {
+                        alert("Issue assigned successfully!")
+                        location.reload();
+                    } else if (response = 0) {
+                        alert('Error assigning issue.It may be linked to an active job.');
                         location.reload();
                     } else {
                         alert(response);
