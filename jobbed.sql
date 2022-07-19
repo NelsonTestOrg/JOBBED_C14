@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 19, 2022 at 02:37 PM
+-- Generation Time: Jul 19, 2022 at 08:07 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.28
 
@@ -36,17 +36,18 @@ CREATE TABLE `tbl_issues` (
   `issue_map_location` varchar(255) NOT NULL,
   `issue_status` int(11) NOT NULL,
   `issue_handler_id` int(11) NOT NULL,
-  `issue_final_bid` int(11) NOT NULL
+  `issue_bid_amt` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tbl_issues`
 --
 
-INSERT INTO `tbl_issues` (`issue_id`, `issue_owner_id`, `issue_category`, `issue_location`, `issue_details`, `issue_map_location`, `issue_status`, `issue_handler_id`, `issue_final_bid`) VALUES
-(19, 19, 48, 2, 'I need help moving from South C to South B', 'South C, Nairobi West', 1, 0, 0),
-(20, 30, 50, 1, 'I have a huge load of clothes like 30 shirts , 20 socks with sticky stains, 10 pairs of pants. I will provide water and detergents. ', 'Qwetu Wilsonview, Keri road', 1, 0, 0),
-(21, 29, 44, 1, 'My sink has a serious leak . Kids playing destroyed it. Need help urgently', 'South C, Nairobi West', 1, 0, 0);
+INSERT INTO `tbl_issues` (`issue_id`, `issue_owner_id`, `issue_category`, `issue_location`, `issue_details`, `issue_map_location`, `issue_status`, `issue_handler_id`, `issue_bid_amt`) VALUES
+(19, 19, 48, 2, 'I need help moving from South C to South B', 'South C, Nairobi West', 2, 28, 300),
+(20, 30, 50, 1, 'I have a huge load of clothes like 30 shirts , 20 socks with sticky stains, 10 pairs of pants. I will provide water and detergents. ', 'Qwetu Wilsonview, Keri road', 2, 28, 300),
+(21, 29, 44, 1, 'My sink has a serious leak . Kids playing destroyed it. Need help urgently', 'South C, Nairobi West', 2, 28, 300),
+(22, 29, 51, 2, 'I need to deliver 30 letters to different estates in Madaraka Anyone down for the job?', 'Strathmore, Keri Rd', 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -67,7 +68,9 @@ CREATE TABLE `tbl_requests` (
 --
 
 INSERT INTO `tbl_requests` (`request_id`, `request_owner_id`, `request_issue_id`, `request_bidder_id`, `request_bid_amt`) VALUES
-(3, 0, 20, 22, 300);
+(3, 0, 20, 22, 300),
+(4, 30, 20, 28, 0),
+(5, 29, 21, 28, 0);
 
 -- --------------------------------------------------------
 
@@ -151,9 +154,10 @@ CREATE TABLE `tbl_status` (
 --
 
 INSERT INTO `tbl_status` (`status_id`, `status_name`) VALUES
-(1, 'pending'),
-(2, 'active'),
-(3, 'completed');
+(1, 'posted'),
+(2, 'pending'),
+(3, 'active'),
+(4, 'completed');
 
 -- --------------------------------------------------------
 
@@ -280,13 +284,13 @@ ALTER TABLE `tbl_workers`
 -- AUTO_INCREMENT for table `tbl_issues`
 --
 ALTER TABLE `tbl_issues`
-  MODIFY `issue_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `issue_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `tbl_requests`
 --
 ALTER TABLE `tbl_requests`
-  MODIFY `request_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `request_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tbl_roles`
@@ -310,7 +314,7 @@ ALTER TABLE `tbl_service_location`
 -- AUTO_INCREMENT for table `tbl_status`
 --
 ALTER TABLE `tbl_status`
-  MODIFY `status_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `status_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tbl_users`
