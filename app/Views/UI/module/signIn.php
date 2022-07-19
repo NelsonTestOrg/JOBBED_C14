@@ -42,7 +42,7 @@
                 <p>
                     Don't have an account?
                 </p>
-                <button id="register_link_btn" class="sign-up-btn btn btn-text-primary m-2">Sign Up!</button>
+                <button id="register_link_btn" class="sign-up-btn btn btn-outline-secondary m-2">Sign Up!</button>
             </div>
         </div>
         <div class="w-50 p-4 form-control" id="sign_up_form_div">
@@ -82,7 +82,7 @@
                 <p>
                     Already have an account?
                 </p>
-                <button class="sign-up-btn btn btn-primary m-2" id="login_link_btn">Log In</button>
+                <button class="sign-up-btn btn btn-outline-secondary m-2" id="login_link_btn">Log In</button>
             </div>
         </div>
     </div>

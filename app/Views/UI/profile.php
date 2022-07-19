@@ -21,6 +21,7 @@ $session = session();
                 <?php include("app-sections/user-profile.php"); ?>
                 <?php include("app-sections/profile-history.php"); ?>
                 <?php include("app-sections/profile-pending.php"); ?>
+                <?php include("app-sections/profile-requests.php"); ?>
             </div>
         </div>
     </section>
@@ -30,30 +31,42 @@ $session = session();
         var pd_btn = document.getElementById("pd_btn");
         var pp_btn = document.getElementById("pp_btn");
         var ph_btn = document.getElementById("ph_btn");
+        var pr_btn = document.getElementById("pr_btn");
         const ph_div = document.getElementById("ph_div");
         const pd_div = document.getElementById("pd_div");
         const pp_div = document.getElementById("pp_div");
+        const pr_div = document.getElementById("pr_div");
 
 
         ph_btn.addEventListener("click", function() {
             ph_div.style.display = "flex";
             pd_div.style.display = "none";
             pp_div.style.display = "none";
+            pr_div.style.display = "none";
         })
         pp_btn.addEventListener("click", function() {
             ph_div.style.display = "none";
             pd_div.style.display = "none";
             pp_div.style.display = "flex";
+            pr_div.style.display = "none";
         })
         pd_btn.addEventListener("click", function() {
             ph_div.style.display = "none";
             pd_div.style.display = "flex";
             pp_div.style.display = "none";
+            pr_div.style.display = "none";
+        })
+        pr_btn.addEventListener("click", function() {
+            ph_div.style.display = "none";
+            pd_div.style.display = "none";
+            pp_div.style.display = "none";
+            pr_div.style.display = "flex";
         })
 
         $(document).ready(function() {
             displayPendingIssues();
             displayHistory();
+
         })
 
         function displayPendingIssues() {
@@ -67,31 +80,28 @@ $session = session();
                 data: data,
                 success: function(response) {
                     $.each(response, function(key, value) {
-                            $("#pending-issues").append(
-                                " <tr class='py-4 bb-black'>" +
-                                "   <td class='w-sm br-black ud aic jcc'> IS /" + value.issue_id + "</td>" +
-                                "   <td>" +
-                                "       <div class='issue-card ud px-4 w-100 '>" +
-                                "         <input value='" + value.issue_id + "' class='hidden' id='issue_id'>  " +
-                                "           <h5 class='ta-start px-1 py-0'>" + value.service_name + " , " + value.location_name + "</h5>    " +
-                                "           <p class='ta-start w-100 px-1'>" + value.issue_details + "</p>" +
-                                "       </div>" +
-                                "   </td>" +
-                                "   <td class='w-md'>" + value.issue_map_location + "</td>" +
-                                "   <td class='s-down' id='bidder_details'>" +
-                                "   </td>" +
-                                "   <td class='w-fit'>" +
-                                "       <div class='ud w-md aic'>" +
-                                "           <button class='btn btn-warning w-50 my-1'> <i class='fa-solid fa-pen-to-square'></i> Edit</button>" +
-                                "           <button class='btn btn-danger w-50 my-1'> <i class='fa-solid fa-trash-can'></i> Delete Issue </button>" +
-                                "       </div>" +
-                                "   </td>" +
-                                "</tr>"
-                            )
-                        },
-                        appendRequests()
-
-                    )
+                        $("#pending-issues").append(
+                            " <tr class='py-4 bb-black'>" +
+                            "   <td class='w-sm br-black ud aic jcc'> IS /" + value.issue_id + "</td>" +
+                            "   <td class='w-25  ud aic jcc'>" +
+                            "       <div class='ud px-4 '>" +
+                            "         <input value='" + value.issue_id + "' class='hidden issue_id' id='issue_id'>  " +
+                            "           <h5 class='ta-start px-1 py-0 tx-uc'> <b>" + value.service_name + " , " + value.location_name + "</b></h5>    " +
+                            "       </div>" +
+                            "   </td>" +
+                            "   <td class='w-50  ud aic jcc'>" +
+                            "       <p class='ta-start w-100 px-1'>" + value.issue_details + "</p>" +
+                            "   </td>" +
+                            "   <td class='w-md  ud aic jcc'>" + value.issue_map_location + "</td>" +
+                            "   <td class='w-fit ud aic jcc'>" +
+                            "       <div class='ud w-md aic'>" +
+                            "           <button class='btn btn-warning w-50 my-1'> <i class='fa-solid fa-pen-to-square'></i> Edit</button>" +
+                            "           <button class='btn btn-danger w-50 my-1'> <i class='fa-solid fa-trash-can'></i> Delete Issue </button>" +
+                            "       </div>" +
+                            "   </td>" +
+                            "</tr>"
+                        )
+                    }, appendRequests())
                 }
             })
 
@@ -100,13 +110,13 @@ $session = session();
 
         function appendRequests() {
             var issue_id = {
-                'issue_id': $('#issue_id').val(),
+                'issue_id': $('.issue_id').val(),
             }
             $.ajax({
                 url: "<?php echo base_url('data_handling/getRequestData') ?>",
                 method: 'POST',
                 data: issue_id,
-                success: function(result) {
+                success: function(response) {
                     $.each(response, function(key, value) {
                         $("#bidder-details").append(
                             "       <div class='bid-profile bg-dark my-1 ud w-75 aic p-1' >" +

@@ -12,7 +12,7 @@ $session = session();
     <section class="login ud aic bg-clear h-full jsb w-100 ">
         <nav class="navbar bg-grey lr aic jcc w-100 py-4">
             <div class="logo-container">
-                <a href="home"></a><img src="images/jobbed.png" alt="">
+                <a href="home"><img src="images/jobbed.png" alt=""></a>
             </div>
         </nav>
         <div class="login-form ud p-4 h-100 jcc aic w-50">
@@ -59,15 +59,16 @@ $session = session();
                     method: 'POST',
                     data: data,
                     success: function(login_res) {
-                        if (login_res == 1) {
+                        alert(login_res);
+                        if (login_res == 2) {
                             $('#worker_email').val("");
                             $('#worker_password').val("");
                             window.location = 'browseJobs';
 
-                        } else if (login_res == 0) {
-                            alert("Some issue");
+                        } else if (login_res == 3) {
+                            window.location = 'admin_home';
                         } else {
-                            alert("Deez NUts");
+                            alert("Error mate!");
                         }
                     }
                 })

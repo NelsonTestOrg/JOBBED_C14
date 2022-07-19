@@ -21,10 +21,10 @@ class user_model extends Model
 
         return $login_result->getRowArray();
     }
-    public function loginworker($login_email)
+    public function loginworker($query_login)
     {
         $db = db_connect();
-        $login_result = $db->query("SELECT * FROM tbl_users WHERE user_email = '$login_email' AND user_role_id = 2 ");
+        $login_result = $db->query($query_login);
 
         return $login_result->getRowArray();
     }

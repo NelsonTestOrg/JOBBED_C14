@@ -68,8 +68,12 @@ $session = session();
                             "                   <h5>Average bid cost:</h5>" +
                             "                   <span class='ctg-span-w'>Ksh.500</span>" +
                             "               </div>" +
-                            "               <div class='b aic px-4'>" +
-                            "                   <button class='btn btn-primary'><i class='fa-solid fa-folder-plus px-2'></i>Submit Request</button>" +
+                            "               <div class='b ud aic px-4 w-25'>" +
+                            "                   <div class='lr w-100 aic jcc p-1'>" +
+                            "                       <label for='bid-amt'><b>Your bid: Ksh. </b></label>" +
+                            "                       <input type='number' placeholder='500' class='form-control w-50 mx-1' id='" + value.issue_id + "'>" +
+                            "                   </div>" +
+                            "                   <button class='btn btn-primary w-100 submit-request' data-id ='" + value.issue_id + "'><i class='fa-solid fa-folder-plus px-2'></i>Submit Request</button>" +
                             "               </div>" +
                             "           </div>" +
                             "       </div>" +
@@ -79,5 +83,33 @@ $session = session();
                 }
             })
         }
+        $(document).on('click', '.submit-request', function() {
+            var service_id = $(this).data('id');
+            var data = {
+                'user_id': $('#user_id').val(),
+                'bid_amount': $('#'.service_id).val(),
+                'service_id': service_id
+            };
+            $.ajax({
+                method: "POST",
+                url: "<?php echo base_url('data_handling/addRequest') ?>",
+                data: data,
+                success: function(response) {
+                    if (response = 1) {
+                        $('#jobbrowser').html("");
+                        alert("Request sent successfully!")
+                        displayJobs();
+                    } else if (response = 0) {
+                        alert('Error sending request.');
+                        $('#jobbrowser').html("");
+                        displayJobs();
+                    } else {
+                        alert(response);
+
+                    }
+                }
+
+            })
+        })
     </script>
 </body>

@@ -9,6 +9,7 @@
             <ul>
                 <li><button class="btn btn-dark" id="pd_btn">Personal Details</button></li>
                 <li><button class="btn btn-dark" id="pp_btn">Pending Orders</button></li>
+                <li><button class="btn btn-dark" id="pr_btn">Order Requests</button></li>
                 <li><button class="btn btn-dark" id="ph_btn">History</button></li>
             </ul>
         </div>

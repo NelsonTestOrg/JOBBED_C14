@@ -21,16 +21,16 @@
                 <h3>About US</h3>
             </li>
             <li>
-                <h6>About Us</h6>
+                <h6 class="td-none f-link">About Us</h6>
             </li>
             <li>
-                <h6>Contact Us</h6>
+                <h6 class="td-none f-link">Contact Us</h6>
             </li>
             <li>
-                <h6>Community</h6>
+                <h6 class="td-none f-link">Community</h6>
             </li>
             <li>
-                <h6>FAQ's</h6>
+                <h6 class="td-none f-link">FAQ's</h6>
             </li>
         </ul>
     </div>
@@ -40,10 +40,12 @@
                 <h3>Resources</h3>
             </li>
             <li>
-                <h6><a href="<?php echo base_url("workerLogin"); ?>" class="td-none f-link">Get Hired </a></h6>
+                <a href="<?php echo base_url("workerLogin"); ?>" class="td-none f-link">
+                    <h6 class="td-none f-link">Get Hired</h6>
+                </a>
             </li>
             <li>
-                <h6>Find A HandyMan</h6>
+                <h6 class="td-none f-link">Find A HandyMan</h6>
             </li>
         </ul>
     </div>

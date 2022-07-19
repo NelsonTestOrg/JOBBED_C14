@@ -73,31 +73,31 @@ $session = session();
         <div class="line-2 mx-4"></div>
         <div class="comment-holder lr w-100 p-1 jcc">
             <div class="comment jcc aic ud w-25 p-2">
-                <h4 class="w-100">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores sapiente aliquid quibusdam, minima pariatur optio a aspernatur. At excepturi ullam assumenda eos eveniet nemo amet culpa quod facere, error voluptatum?"</h4>
+                <h4 class="w-100 h-50 tac jcc">"JOBBED© has made my life easier as help is just one click away. Services are super fast and super reliable"</h4>
                 <div class="lr w-100 aic jcc py-2">
                     <img src="images/person1.jpg" class="img-profile" alt="">
                     <h3 class="px-2">-Candace Ligma</h3>
                 </div>
             </div>
             <div class="comment jcc aic ud w-25 p-2">
-                <h4 class="w-100">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores sapiente aliquid quibusdam, minima pariatur optio a aspernatur. At excepturi ullam assumenda eos eveniet nemo amet culpa quod facere, error voluptatum?"</h4>
+                <h4 class="w-100 h-50 tac jcc">"It's never easy getting reliable and trustworthy people. JOBBED© has changed that."</h4>
                 <div class="lr w-100 aic jcc py-2">
                     <img src="images/person2.jpg" class="img-profile" alt="">
                     <h3 class="px-2">-Sigma Chad</h3>
                 </div>
             </div>
             <div class="comment jcc aic w-25 ud p-2">
-                <h4 class="w-100">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores sapiente aliquid quibusdam, minima pariatur optio a aspernatur. At excepturi ullam assumenda eos eveniet nemo amet culpa quod facere, error voluptatum?"</h4>
+                <h4 class="w-100 h-50 tac jcc">"Deeply impressed how easy and fast services are here at JOBBED© "</h4>
                 <div class="lr w-100 aic jcc py-2">
                     <img src="images/ThePapaa.jpeg" class="img-profile" alt="">
-                    <h3 class="px-2">-Sir.Gon D.</h3>
+                    <h3 class="px-2">-The Papaa.</h3>
                 </div>
             </div>
             <div class="comment jcc aic w-25 ud p-2">
-                <h4 class="w-100">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores sapiente aliquid quibusdam, minima pariatur optio a aspernatur. At excepturi ullam assumenda eos eveniet nemo amet culpa quod facere, error voluptatum?"</h4>
+                <h4 class="w-100 h-50 tac jcc">"Modern problems require modern solutions. JOBBED© is that solution for everyone."</h4>
                 <div class="lr w-100 aic jcc py-2">
                     <img src="images/person4.jpg" class="img-profile" alt="">
-                    <h3 class="px-2">-The Man.</h3>
+                    <h3 class="px-2">-Sir.Gon D.</h3>
                 </div>
             </div>
         </div>
@@ -130,9 +130,9 @@ $session = session();
                     data: data,
                     success: function(result) {
 
-                        alert(result);
+
                         if (result == 1) {
-                            location.reload();
+
                             $('#success').fadeIn('slow', function() {
                                 $('#success').delay(3000).fadeOut();
                             });

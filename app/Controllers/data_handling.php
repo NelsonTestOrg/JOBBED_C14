@@ -63,7 +63,7 @@ class data_handling extends BaseController
             $email = $this->request->getPost('user_email');
             $password = $this->request->getPost('user_password');
             $hashed_password = password_hash($password, PASSWORD_BCRYPT);
-            $role_id = '1';
+            $role_id = '3';
 
             $my_user_reg = new user_model();
             $result = $my_user_reg->add_user($username, $email, $hashed_password, $role_id);
@@ -177,9 +177,11 @@ class data_handling extends BaseController
         $sesion = session();
         $login_email = $this->request->getPost("worker_email");
         $login_pass = $this->request->getPost("worker_password");
+        $request_query = "SELECT * FROM tbl_users WHERE user_email = '$login_email' ";
 
         $user_login = new user_model();
-        $login_res = $user_login->loginworker($login_email);
+        $login_res = $user_login->loginworker($request_query);
+        $role_id = $login_res['user_role_id'];
         $hashed_pass = $login_res['user_password'];
         $db_uname = $login_res['users_name'];
         $db_uID = $login_res['user_id'];
@@ -194,7 +196,7 @@ class data_handling extends BaseController
         if (password_verify($login_pass, $hashed_pass)) {
             session_reset();
             $sesion->set($user_data);
-            echo 1;
+            echo $role_id;
         } else {
             echo 0;
         }
@@ -372,5 +374,19 @@ class data_handling extends BaseController
         } catch (\Throwable $th) {
             echo $th->getMessage();
         }
+    }
+    public function addRequest()
+    {
+        $model_instance = new user_model();
+        $worker_id = $this->request->getPost('user_id');
+        $service_id = $this->request->getPost('service_id');
+        $bid_amount = $this->request->getPost('bid_amount');
+        $data_request = "SELECT * FROM tbl_issues WHERE issue_id ='$service_id'";
+        $get_issue_data = $model_instance->loginworker($data_request);
+
+        $issue_owner_id = $get_issue_data['issue_owner_id'];
+
+        $data_insertion = "INSERT INTO tbl_requests ";
+
     }
 }
