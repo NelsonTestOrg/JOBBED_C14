@@ -10,7 +10,7 @@ $session = session();
 
 <body>
     <section class="w-100">
-    <?php include("admin_modules/navbar.php"); ?>
+        <?php include("admin_modules/navbar.php"); ?>
         <section class="admin-body lr jcc w-100 ">
             <?php include("admin_modules/admin_side_nav.php"); ?>
             <div class="table-section ud aic w-75 bg-grey">
@@ -26,21 +26,15 @@ $session = session();
                         <table class="w-100 table table-striped">
                             <thead class="thead-dark p-sticky p-3 bg-grey">
                                 <tr>
-                                    <td> <b> USER ID </b></td>
-                                    <td> <b> USER NAME </b></td>
-                                    <td> <b> USER EMAIL</b></td>
-                                    <td> <b> USER ROLE</b></td>
+                                    <td> <b> REQUEST ID </b></td>
+                                    <td> <b> REQUEST BIDDER </b></td>
+                                    <td> <b> REQUEST CATEGORY </b></td>
+                                    <td> <b> REQUEST DETAILS</b></td>
+                                    <td> <b> BID AMT</b></td>
                                     <td> <b> ACTIONS</b></td>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td>30</td>
-                                    <td>Brathwaite Kinuthia</td>
-                                    <td>kinuthiabrathwaite@gmail.com</td>
-                                    <td>USER_CLIENT</td>
-                                    <td><button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
-                                </tr>
+                            <tbody id="issues">
                             </tbody>
                         </table>
                     </div>
@@ -49,4 +43,54 @@ $session = session();
             </div>
         </section>
     </section>
+    <script>
+        $(document).ready(function() {
+            displayIssues();
+        });
+
+        function displayIssues() {
+            $.ajax({
+                url: "<?php echo base_url('data_handling/getRequestsAdmin') ?>",
+                method: 'GET',
+                success: function(response) {
+                    $.each(response, function(key, value) {
+                        $("#issues").append(
+                            "<tr>" +
+                            "   <td>" + value.issue_id + "</td>" +
+                            "   <td class='tx-uc'><b>" + value.users_name + "</b></td>" +
+                            "   <td>" + value.service_name + ", " + value.location_name + "</td>" +
+                            "   <td class='w-25'>" + value.issue_details + "</td>" +
+                            "   <td><b>Ksh." + value.issue_bid_amt + "</b></td>" +
+                            "   <td><button class='btn btn-danger cancel-request' data-id='" + value.issue_id + "' ><i class='fa-solid fa-trash-can'></i></button></td>" +
+                            "</tr>"
+                        )
+                    })
+                }
+            })
+
+        }
+        $(document).on('click', '.cancel-request', function() {
+            var issue_id = $(this).data('id');
+            $.ajax({
+                method: "POST",
+                url: "<?php echo base_url('data_handling/denyRequest') ?>",
+                data: {
+                    issue_id: issue_id
+                },
+                success: function(response) {
+                    if (response = 1) {
+                        alert("Request declined successfully!")
+                        location.reload();
+                    } else if (response = 0) {
+                        alert('Error declining the request.');
+                        location.reload();
+                    } else {
+                        alert(response);
+
+                    }
+                }
+
+            })
+        })
+    </script>
 </body>

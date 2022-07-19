@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 19, 2022 at 08:07 PM
+-- Generation Time: Jul 20, 2022 at 01:03 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.28
 
@@ -44,10 +44,10 @@ CREATE TABLE `tbl_issues` (
 --
 
 INSERT INTO `tbl_issues` (`issue_id`, `issue_owner_id`, `issue_category`, `issue_location`, `issue_details`, `issue_map_location`, `issue_status`, `issue_handler_id`, `issue_bid_amt`) VALUES
-(19, 19, 48, 2, 'I need help moving from South C to South B', 'South C, Nairobi West', 2, 28, 300),
-(20, 30, 50, 1, 'I have a huge load of clothes like 30 shirts , 20 socks with sticky stains, 10 pairs of pants. I will provide water and detergents. ', 'Qwetu Wilsonview, Keri road', 2, 28, 300),
-(21, 29, 44, 1, 'My sink has a serious leak . Kids playing destroyed it. Need help urgently', 'South C, Nairobi West', 2, 28, 300),
-(22, 29, 51, 2, 'I need to deliver 30 letters to different estates in Madaraka Anyone down for the job?', 'Strathmore, Keri Rd', 1, 0, 0);
+(20, 30, 50, 1, 'I have a huge load of clothes like 30 shirts , 20 socks with sticky stains, 10 pairs of pants. I will provide water and detergents. ', 'Qwetu Wilsonview, Keri road', 1, 0, 0),
+(21, 29, 44, 1, 'My sink has a serious leak . Kids playing destroyed it. Need help urgently', 'South C, Nairobi West', 2, 28, 200),
+(23, 29, 50, 1, 'I need some clothes cleaned', 'Kagio, Kenya', 4, 28, 250),
+(30, 29, 46, 2, 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatem, veritatis officiis nihil mollitia et recusandae facere eos, officia placeat quos ipsum accusamus facilis eveniet autem sit beatae vero dolor?', 'Strathmore, Keri Rd', 2, 28, 500);
 
 -- --------------------------------------------------------
 
@@ -284,7 +284,7 @@ ALTER TABLE `tbl_workers`
 -- AUTO_INCREMENT for table `tbl_issues`
 --
 ALTER TABLE `tbl_issues`
-  MODIFY `issue_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `issue_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `tbl_requests`
@@ -302,7 +302,7 @@ ALTER TABLE `tbl_roles`
 -- AUTO_INCREMENT for table `tbl_services`
 --
 ALTER TABLE `tbl_services`
-  MODIFY `service_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `service_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT for table `tbl_service_location`

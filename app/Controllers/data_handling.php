@@ -418,4 +418,11 @@ class data_handling extends BaseController
             echo 0;
         }
     }
+    public function getRequestsAdmin()
+    {
+        $model_instance = new user_model();
+        $request_query = "SELECT tbl_issues.* ,tbl_users.users_name,tbl_services.service_name,tbl_service_location.location_name,tbl_status.status_name FROM tbl_issues INNER JOIN tbl_status ON tbl_issues.issue_status = tbl_status.status_id INNER JOIN tbl_services ON tbl_issues.issue_category = tbl_services.service_id INNER JOIN tbl_service_location ON tbl_issues.issue_location = tbl_service_location.location_id INNER JOIN tbl_users ON tbl_issues.issue_handler_id =tbl_users.user_id WHERE tbl_issues.issue_status = 2;";
+        $service_array = $model_instance->getData($request_query);
+        return $this->response->setJSON($service_array);
+    }
 }
