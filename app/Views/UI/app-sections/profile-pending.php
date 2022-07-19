@@ -2,7 +2,7 @@
     <div class="w-100 lr jsb aic">
         <div class="history-head">
             <img src="images/pending.png" alt="">
-            <h3>Pending Orders</h3>
+            <h3>Live Issues</h3>
         </div>
         <div class="upload w-25">
             <a href="request"><button class="btn btn-primary bs-1"><i class="fa-solid fa-file-circle-plus mx-2"></i>Post Issue</button> </a>

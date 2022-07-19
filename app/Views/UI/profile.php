@@ -66,6 +66,7 @@ $session = session();
         $(document).ready(function() {
             displayPendingIssues();
             displayHistory();
+            displayRequests();
 
         })
 
@@ -170,6 +171,45 @@ $session = session();
                             "       </div>" +
                             "   </td>" +
                             "</tr>"
+                        )
+                    })
+                }
+            })
+        }
+
+        function displayRequests() {
+            var data = {
+                'user_id': $('#user_id_public').val(),
+            }
+
+            $.ajax({
+                url: "<?php echo base_url('data_handling/getWorkerRequests') ?>",
+                method: 'POST',
+                data: data,
+                success: function(response) {
+                    $.each(response, function(key, value) {
+                        $("#pending-requests").append(
+                            "		<tr class='py-4 bb-black'>" +
+                            "                <td class='w-sm br-black ud aic jcc'>OR/12</td>" +
+                            "                <td class='w-50 ud aic jcc'>" +
+                            "                    <div class='ud ta-start px-4 w-100'>" +
+                            "                        <h5 class='ta-start px-1 py-0 tx-uc'><b>" + value.service_name + "," + value.location_name + "</b></h5>" +
+                            "                       <p class='ta-start w-100 px-1'>" + value.issue_details + "</p>" +
+                            "                   </div>" +
+                            "              </td>" +
+                            "               <td class='w-md  ud aic jcc'>" + value.issue_map_location + "</td>" +
+                            "               <td class='lr jcc aic w-25'>" +
+                            "                     <img src='images/man.png' alt='' class='img-sm'>" +
+                            "                    <div class='tx ta-start'>" +
+                            "                        <h5 class='tx-uc'>" + value.users_name + "</h5>" +
+                            "                         <span>Bid Price:  Ksh." + value.issue_bid_amt + "</span>" +
+                            "                    </div>" +
+                            "                 </td>" +
+                            "                 <td class='ud w-md aic jcc'>" +
+                            "                    <button class='btn btn-success w-50 my-1'><i class='fa-solid fa-phone px-1'></i>ENGAGE</button>" +
+                            "                    <button class='btn btn-danger w-50'><i class='fa-solid fa-trash-can px-1'></i>CANCEL</button>" +
+                            "                </td>" +
+                            "            </tr>"
                         )
                     })
                 }

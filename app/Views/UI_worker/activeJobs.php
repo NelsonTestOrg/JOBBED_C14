@@ -63,7 +63,7 @@ $session = session();
                             "               </div>" +
                             "               <div class='avg lr aic'>" +
                             "                   <h5>My bid:</h5>" +
-                            "                   <span class='ctg-span-w bg-yellow'>Ksh." + value.issue_final_bid + "</span>" +
+                            "                   <span class='ctg-span-w bg-yellow'>Ksh." + value.issue_bid_amt + "</span>" +
                             "               </div>" +
                             "               <div class='b aic px-4'>" +
                             "                   <button class='btn btn-success mx-1'><i class='fa-solid fa-clipboard-check mx-2'></i>COMPLETE</button>" +

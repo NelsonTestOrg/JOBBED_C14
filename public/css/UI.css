@@ -581,8 +581,8 @@ h3 {
   display: inline-block;
   width: 100%;
 }
-.second-div li:nth-child(2) {
-  padding-block: 1rem;
+.second-div li {
+  padding-block: 0.5rem;
 }
 .second-div button {
   color: white;

@@ -69,9 +69,6 @@
                     Log Out
                 </button>
             </a>
-            <a href="<?php echo base_url("admin_home") ?>" class="my-2 w-100">
-                <button class="btn btn-primary">Admin</button>
-            </a>
         </div>
         <div class="branding w-100 ">
             <a href="home">

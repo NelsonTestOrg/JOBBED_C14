@@ -1,4 +1,4 @@
-<div class="profile-history" id="pp_div">
+<div class="profile-history" id="pr_div">
     <div class="w-100 lr jsb aic">
         <div class="history-head">
             <img src="images/pending.png" alt="">
@@ -13,27 +13,25 @@
     <div class="history-table-div">
         <table class="tableau">
             <thead class="bb-black p-sticky bg-white">
-                <tr class="w-100">
+                <tr>
                     <td class="w-sm">
                         <h6>#</h6>
                     </td>
-                    <td>
+                    <td class="w-50">
                         <h6>Issue</h6>
                     </td>
-                    <td>
-                        <h6>Details</h6>
-                    </td>
-                    <td>
+                    <td class="w-md">
                         <h6>Location</h6>
                     </td>
-                    <td>
+                    <td class="w-25">
+                        <h6>Handler</h6>
+                    </td>
+                    <td class="w-md">
                         <h6>Actions</h6>
                     </td>
                 </tr>
             </thead>
-            <tbody id="pending-issues">
-
-            </tbody>
+            <tbody id="pending-requests"></tbody>
         </table>
     </div>
 </div>
