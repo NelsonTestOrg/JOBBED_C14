@@ -52,13 +52,6 @@ $session = session();
                                 </tr>
                             </thead>
                             <tbody id="users">
-                                <tr>
-                                    <td>30</td>
-                                    <td>Brathwaite Kinuthia</td>
-                                    <td>kinuthiabrathwaite@gmail.com</td>
-                                    <td>USER_CLIENT</td>
-                                    <td><button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>

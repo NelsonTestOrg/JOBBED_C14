@@ -40,7 +40,7 @@ $session = session();
                         <h3>ADD SERVICES</h3>
                         <span class="line-sm"></span>
                     </div>
-                    <div class="add-service ud aic w-100 jcc">
+                    <form class="add-service ud aic w-100 jcc" id="service_form" method="POST" action="<?php echo base_url('data_handling/addService'); ?>" enctype="multipart/form-data">
                         <div class="service-photo w-50 ud aic ">
                             <img src="images/search.png" alt="" class="img-lg bd-dark my-2 image_preview">
                             <input type="file" name="service_img" class="form-control w-100" id="service_img" accept="Image/*">
@@ -48,11 +48,9 @@ $session = session();
                         <div class="service-name w-50 ud">
                             <label for="service_name">Service name:</label>
                             <input type="text" name="service_name" id="service_name" class="form-control w-100">
-                            <button class="btn btn-primary my-1" id="add_service"><i class="fa-solid fa-plus"></i>ADD SERVICE</button>
+                            <button type="submit" class="btn btn-primary my-1" id="add_service"><i class="fa-solid fa-plus"></i>ADD SERVICE</button>
                         </div>
-
-
-                    </div>
+                    </form>
                 </div>
                 <div class="cont-div ud w-100 jcc">
                     <div class="table-head ud aic jcc w-100 p-4">
@@ -93,32 +91,6 @@ $session = session();
 
         })
 
-        $(document).on('click', '#add_service', function() {
-            if ($.trim($('#service_name').val()).length == 0) {
-                alert("Invalid service name lengths!");
-            } else {
-                var data = {
-                    'service_name': $('#service_name').val(),
-                };
-                $.ajax({
-                    url: "<?php echo base_url('data_handling/addService') ?>",
-                    method: 'POST',
-                    data: data,
-                    success: function(login_res) {
-                        if (login_res = 1) {
-                            $('#service_name').val("");
-                            alert("Service added successfully.")
-                            location.reload();
-
-                        } else if (login_res = 0) {
-                            alert("Good !");
-                        } else {
-                            alert("Deez NUts");
-                        }
-                    }
-                })
-            }
-        });
         $(document).on('click', '#add_s_location', function() {
             if ($.trim($('#location_name').val()).length == 0) {
                 alert("Invalid service name lengths!");

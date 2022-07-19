@@ -298,15 +298,19 @@ class data_handling extends BaseController
     {
         $model_instance = new user_model();
         $service_name = $this->request->getPost('service_name');
+        $service_photo = $this->request->getFile('service_img');
+        if ($service_photo->isValid() && !$service_photo->hasMoved()) {
+            $image_name = $service_photo->getRandomName();
+            $service_photo->move('assets/', $image_name);
+        }
 
-
-        
-        $insert_query = "INSERT INTO `tbl_services` (`service_id`, `service_name`) VALUES (NULL, '$service_name');";
+        $insert_query = "INSERT INTO `tbl_services` (`service_id`, `service_name`,`service_photo`) VALUES (NULL, '$service_name','$image_name');";
         $service_array = $model_instance->setData($insert_query);
+
         if ($service_array) {
-            return 1;
+            echo "<script>alert('Service added successfully');window.location.href='/adminServiceAdd';</script>";
         } else {
-            return 0;
+            echo "<script>alert('Bad News');window.location.href='/adminServiceAdd';</script>";
         }
     }
     public function addLocation()
