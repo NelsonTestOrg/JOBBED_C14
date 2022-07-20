@@ -12,7 +12,7 @@ $session = session();
     <?php include("module/navbar.php"); ?>
     <?php include("module/signIn.php");  ?>
     <section class="service-section">
-        <div class="operation-message warning-2" id="warning">
+        <div class="operation-message warning-2" id="warning_r">
             <p>Log in required!</p>
         </div>
         <div class="service-bar">
@@ -64,7 +64,7 @@ $session = session();
                 <input type="text" name="search_service" id="" class="search-field px-4" placeholder="I'm looking for ...">
                 <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div> -->
-       
+
         </div>
         <div class="main_container">
             <div class="items-page-link">
@@ -94,89 +94,89 @@ $session = session();
     <script src="js/main.js"></script>
     <script>
         $(document).on('click', '#request', function() {
-            $('#warning').fadeIn('slow', function() {
-                $('#warning').delay(1000).fadeOut();
+            $('#warning_r').fadeIn('slow', function() {
+                $('#warning_r').delay(1000).fadeOut();
             });
         });
         $(document).on('click', '#request2', function() {
-            $('#warning').fadeIn('slow', function() {
-                $('#warning').delay(1000).fadeOut();
+            $('#warning_r').fadeIn('slow', function() {
+                $('#warning_r').delay(1000).fadeOut();
             });
         });
         $(document).ready(function() {
-        $(document).on('click', '#register', function() {
-            if ($.trim($('#user_email').val()).length == 0 || $.trim($('#user_password').val()).length == 0) {
-                $('#warning').fadeIn('slow', function() {
-                    $('#warning').delay(3000).fadeOut();
-                });
-            } else {
-                var data = {
-                    'user_name': $('#user_name').val(),
-                    'user_email': $('#user_email').val(),
-                    'user_password': $('#user_password').val()
-                };
-                $.ajax({
-                    url: "<?php echo base_url('data_handling/register') ?>",
-                    method: 'POST',
-                    data: data,
-                    success: function(result) {
+            $(document).on('click', '#register', function() {
+                if ($.trim($('#user_email').val()).length == 0 || $.trim($('#user_password').val()).length == 0) {
+                    $('#warning').fadeIn('slow', function() {
+                        $('#warning').delay(3000).fadeOut();
+                    });
+                } else {
+                    var data = {
+                        'user_name': $('#user_name').val(),
+                        'user_email': $('#user_email').val(),
+                        'user_password': $('#user_password').val()
+                    };
+                    $.ajax({
+                        url: "<?php echo base_url('data_handling/register') ?>",
+                        method: 'POST',
+                        data: data,
+                        success: function(result) {
 
 
-                        if (result == 1) {
+                            if (result == 1) {
 
-                            $('#success').fadeIn('slow', function() {
-                                $('#success').delay(3000).fadeOut();
-                            });
-                            $('#user_name').val("");
-                            $('#user_email').val("");
-                            $('#user_password').val("");
+                                $('#success').fadeIn('slow', function() {
+                                    $('#success').delay(3000).fadeOut();
+                                });
+                                $('#user_name').val("");
+                                $('#user_email').val("");
+                                $('#user_password').val("");
 
-                        } else {
-                            $('#error').fadeIn('slow', function() {
-                                $('#error').delay(3000).fadeOut();
-                            });
+                            } else {
+                                $('#error').fadeIn('slow', function() {
+                                    $('#error').delay(3000).fadeOut();
+                                });
+                            }
                         }
-                    }
-                })
-            }
+                    })
+                }
+
+            });
+            $(document).on('click', '#login', function() {
+                if ($.trim($('#login-email').val()).length == 0 || $.trim($('#login-password').val()).length == 0) {
+                    $('#warning').fadeIn('slow', function() {
+                        $('#warning').delay(3000).fadeOut();
+                    });
+                } else {
+                    var data = {
+                        'login_email': $('#login-email').val(),
+                        'login_password': $('#login-password').val()
+                    };
+                    $.ajax({
+                        url: "<?php echo base_url('data_handling/login') ?>",
+                        method: 'POST',
+                        data: data,
+                        success: function(login_res) {
+                            if (login_res == 1) {
+                                $('#success_2').fadeIn('slow', function() {
+                                    $('#success_2').delay(3000).fadeOut();
+                                });
+                                $('#login-email').val("");
+                                $('#login-password').val("");
+                                window.location = 'home';
+
+                            } else if (login_res == 0) {
+                                $('#error').fadeIn('slow', function() {
+                                    $('#error').delay(3000).fadeOut();
+                                });
+                            } else {
+                                alert("Deez NUts");
+                            }
+                        }
+                    })
+                }
+            });
 
         });
-        $(document).on('click', '#login', function() {
-            if ($.trim($('#login-email').val()).length == 0 || $.trim($('#login-password').val()).length == 0) {
-                $('#warning').fadeIn('slow', function() {
-                    $('#warning').delay(3000).fadeOut();
-                });
-            } else {
-                var data = {
-                    'login_email': $('#login-email').val(),
-                    'login_password': $('#login-password').val()
-                };
-                $.ajax({
-                    url: "<?php echo base_url('data_handling/login') ?>",
-                    method: 'POST',
-                    data: data,
-                    success: function(login_res) {
-                        if (login_res == 1) {
-                            $('#success_2').fadeIn('slow', function() {
-                                $('#success_2').delay(3000).fadeOut();
-                            });
-                            $('#login-email').val("");
-                            $('#login-password').val("");
-                            window.location = 'home';
-
-                        } else if (login_res == 0) {
-                            $('#error').fadeIn('slow', function() {
-                                $('#error').delay(3000).fadeOut();
-                            });
-                        } else {
-                            alert("Deez NUts");
-                        }
-                    }
-                })
-            }
-        });
-    
-    });
     </script>
 </body>
 

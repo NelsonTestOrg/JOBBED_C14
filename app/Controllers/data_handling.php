@@ -114,7 +114,7 @@ class data_handling extends BaseController
         $is_verified = '0';
 
         $my_user_reg = new user_model();
-        $insertion_query = "INSERT INTO tbl_workers ( worker_fname, worker_lname, worker_email, worker_phone_no, worker_nat_id, worker_address, worker_cert_good_cond, worker_n_id_photo, worker_service_id, worker_password, is_verfied) VALUES ('$first_name', '$last_name', '$worker_email', '$worker_phone_no', '$worker_nat_id', '$worker_address', '$worker_conduct_name', '$worker_photo_name', '$worker_service_id', '$hashed_password', '$is_verified');";
+        $insertion_query = "INSERT INTO tbl_workers ( worker_fname, worker_lname, worker_email, worker_phone_no, worker_nat_id, worker_address, worker_cert_good_cond, worker_n_id_photo, worker_service_id, worker_password, is_verfied, role_id) VALUES ('$first_name', '$last_name', '$worker_email', '$worker_phone_no', '$worker_nat_id', '$worker_address', '$worker_conduct_name', '$worker_photo_name', '$worker_service_id', '$hashed_password', '$is_verified','2');";
         $result = $my_user_reg->setData($insertion_query);
 
         if ($result) {
@@ -157,15 +157,16 @@ class data_handling extends BaseController
         $sesion = session();
         $login_email = $this->request->getPost("worker_email");
         $login_pass = $this->request->getPost("worker_password");
-        $request_query = "SELECT * FROM tbl_users WHERE user_email = '$login_email' ";
+        $request_query = "SELECT * FROM tbl_workers WHERE worker_email = '$login_email' ";
 
         $user_login = new user_model();
         $login_res = $user_login->loginworker($request_query);
-        $role_id = $login_res['user_role_id'];
-        $hashed_pass = $login_res['user_password'];
-        $db_uname = $login_res['users_name'];
-        $db_uID = $login_res['user_id'];
-        $db_email = $login_res['user_email'];
+
+        $hashed_pass = $login_res['worker_password'];
+        $db_uname = $login_res['worker_fname'];
+        $db_uID = $login_res['worker_id'];
+        $role_id = $login_res['role_id'];
+        $db_email = $login_res['worker_email'];
 
         $user_data = [
             'user_name' => $db_uname,
@@ -375,7 +376,7 @@ class data_handling extends BaseController
     {
         $model_instance = new user_model();
         $user_id = $this->request->getPost('user_id');
-        $request_query = "SELECT tbl_users.users_name, tbl_service_location.location_name, tbl_services.service_name, tbl_issues.* FROM tbl_issues INNER JOIN tbl_service_location ON tbl_issues.issue_location = tbl_service_location.location_id INNER JOIN tbl_users ON tbl_issues.issue_handler_id = tbl_users.user_id INNER JOIN tbl_services ON tbl_issues.issue_category = tbl_services.service_id WHERE tbl_issues.issue_status = 2 AND tbl_issues.issue_owner_id = '$user_id'  ";
+        $request_query = "SELECT tbl_workers.*, tbl_service_location.location_name, tbl_services.service_name, tbl_issues.* FROM tbl_issues INNER JOIN tbl_service_location ON tbl_issues.issue_location = tbl_service_location.location_id INNER JOIN tbl_workers ON tbl_issues.issue_handler_id = tbl_workers.worker_id INNER JOIN tbl_services ON tbl_issues.issue_category = tbl_services.service_id WHERE tbl_issues.issue_status = 2 AND tbl_issues.issue_owner_id = '$user_id'  ";
         $service_array = $model_instance->getData($request_query);
         return $this->response->setJSON($service_array);
     }
@@ -422,6 +423,13 @@ class data_handling extends BaseController
     {
         $model_instance = new user_model();
         $request_query = "SELECT tbl_issues.* ,tbl_users.users_name,tbl_services.service_name,tbl_service_location.location_name,tbl_status.status_name FROM tbl_issues INNER JOIN tbl_status ON tbl_issues.issue_status = tbl_status.status_id INNER JOIN tbl_services ON tbl_issues.issue_category = tbl_services.service_id INNER JOIN tbl_service_location ON tbl_issues.issue_location = tbl_service_location.location_id INNER JOIN tbl_users ON tbl_issues.issue_handler_id =tbl_users.user_id WHERE tbl_issues.issue_status = 2;";
+        $service_array = $model_instance->getData($request_query);
+        return $this->response->setJSON($service_array);
+    }
+    public function getWorkerApplications()
+    {
+        $model_instance = new user_model();
+        $request_query = "SELECT * FROM tbl_workers WHERE is_verified = 0";
         $service_array = $model_instance->getData($request_query);
         return $this->response->setJSON($service_array);
     }

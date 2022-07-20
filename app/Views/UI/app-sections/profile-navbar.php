@@ -1,7 +1,7 @@
 <div class="profile-nav">
     <div class="f">
         <div class="first-div">
-            <img src="images/man.png" alt="">
+            <img src="images/chad.png" alt="">
             <h4 class="name"><?php echo $_SESSION['user_name']; ?></h4>
             <hr>
         </div>

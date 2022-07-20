@@ -75,7 +75,7 @@
                         <h5 class="part-detail">
                             Current Photo
                         </h5>
-                        <img src="images/man.png" alt="">
+                        <img src="images/chad.png" alt="">
                     </div>
 
                     <div class="new-profile form-control m-2 w-50"><input type="file" accept="image/*" name="user-new-profile" id="" class="image-picker"></div>

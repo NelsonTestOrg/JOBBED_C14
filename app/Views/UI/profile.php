@@ -200,9 +200,10 @@ $session = session();
                             "               <td class='w-md  ud aic jcc'>" + value.issue_map_location + "</td>" +
                             "               <td class='lr jcc aic w-25'>" +
                             "                     <img src='images/man.png' alt='' class='img-sm'>" +
-                            "                    <div class='tx ta-start'>" +
-                            "                        <h5 class='tx-uc'>" + value.users_name + "</h5>" +
+                            "                    <div class='tx ud jcc ta-start'>" +
+                            "                        <h5 class='tx-uc'>" + value.worker_fname + "</h5>" +
                             "                         <span>Bid Price:  Ksh." + value.issue_bid_amt + "</span>" +
+                            "                          <span>Phone Number: <p class='tx-uc'>+254 " + value.worker_phone_no + "</p></span>" +
                             "                    </div>" +
                             "                 </td>" +
                             "                 <td class='ud w-md aic jcc'>" +

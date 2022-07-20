@@ -67,7 +67,7 @@ $session = session();
                         } else if (login_res == 3) {
                             window.location = 'admin_home';
                         } else {
-                            alert("Error mate!");
+                            alert("Credentials denied!");
                         }
                     }
                 })

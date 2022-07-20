@@ -194,7 +194,7 @@ $session = session();
             success: function(response) {
                 $.each(response, function(key, value) {
                     $("#services").append(
-                        "<option value =" + value.service_id + ">" + value.service_name + "</option>"
+                        "<option value =" + value.service_id + " class='tx-uc'>" + value.service_name + "</option>"
                     )
                 })
             }
