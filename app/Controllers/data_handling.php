@@ -119,10 +119,10 @@ class data_handling extends BaseController
 
         if ($result) {
             // return redirect()->back()->with('fail', 'Something went awfully wrong');
-            echo 1;
+            echo "<script>alert('Details sent successfully!'); window.location.href ='/workerRegister'; </script>";
         } else {
             // return redirect()->back()->with('success', 'You have been registered successfully');
-            echo 0;
+            echo "<script>alert('Error sending details!'); window.location.href ='/workerRegister'; </script>";
         }
         // }
     }
