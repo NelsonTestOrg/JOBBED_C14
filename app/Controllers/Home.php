@@ -75,4 +75,8 @@ class Home extends BaseController
     {
         return view('UI_admin/admin_services.php');
     }
+    public function adminApplications()
+    {
+        return view('UI_admin/admin_app.php');
+    }
 }

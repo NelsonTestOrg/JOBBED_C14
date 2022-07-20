@@ -114,7 +114,7 @@ class data_handling extends BaseController
         $is_verified = '0';
 
         $my_user_reg = new user_model();
-        $insertion_query = "INSERT INTO tbl_workers ( worker_fname, worker_lname, worker_email, worker_phone_no, worker_nat_id, worker_address, worker_cert_good_cond, worker_n_id_photo, worker_service_id, worker_password, is_verfied, role_id) VALUES ('$first_name', '$last_name', '$worker_email', '$worker_phone_no', '$worker_nat_id', '$worker_address', '$worker_conduct_name', '$worker_photo_name', '$worker_service_id', '$hashed_password', '$is_verified','2');";
+        $insertion_query = "INSERT INTO tbl_workers ( worker_fname, worker_lname, worker_email, worker_phone_no, worker_nat_id, worker_address, worker_cert_good_cond, worker_n_id_photo, worker_service_id, worker_password, is_verified, role_id) VALUES ('$first_name', '$last_name', '$worker_email', '$worker_phone_no', '$worker_nat_id', '$worker_address', '$worker_conduct_name', '$worker_photo_name', '$worker_service_id', '$hashed_password', '$is_verified','2');";
         $result = $my_user_reg->setData($insertion_query);
 
         if ($result) {
@@ -157,7 +157,7 @@ class data_handling extends BaseController
         $sesion = session();
         $login_email = $this->request->getPost("worker_email");
         $login_pass = $this->request->getPost("worker_password");
-        $request_query = "SELECT * FROM tbl_workers WHERE worker_email = '$login_email' ";
+        $request_query = "SELECT * FROM tbl_workers WHERE worker_email = '$login_email' AND is_verified = 1 ";
 
         $user_login = new user_model();
         $login_res = $user_login->loginworker($request_query);
@@ -426,11 +426,35 @@ class data_handling extends BaseController
         $service_array = $model_instance->getData($request_query);
         return $this->response->setJSON($service_array);
     }
-    public function getWorkerApplications()
+    public function getApplications()
     {
         $model_instance = new user_model();
         $request_query = "SELECT * FROM tbl_workers WHERE is_verified = 0";
         $service_array = $model_instance->getData($request_query);
         return $this->response->setJSON($service_array);
+    }
+    public function deleteApp()
+    {
+        $worker_id = $this->request->getPost('worker_id');
+        $model_instance = new user_model();
+        $request_query = "DELETE FROM tbl_workers WHERE worker_id = '$worker_id'";
+        $service_array = $model_instance->setData($request_query);
+        if($service_array){
+            echo 1;
+        }else{
+            echo 0;
+        }
+    }
+    public function acceptApp()
+    {
+        $worker_id = $this->request->getPost('worker_id');
+        $model_instance = new user_model();
+        $request_query = "UPDATE tbl_workers SET is_verified = '1' WHERE worker_id = '$worker_id'";
+        $service_array = $model_instance->setData($request_query);
+        if($service_array){
+            echo 1;
+        }else{
+            echo 0;
+        }
     }
 }

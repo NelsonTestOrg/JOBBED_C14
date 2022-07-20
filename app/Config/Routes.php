@@ -46,6 +46,7 @@ $routes->get('admin_profile', 'Home::admin_profile');
 $routes->get('admin_request', 'Home::admin_request');
 $routes->get('admin_issues', 'Home::admin_issues');
 $routes->get('adminServiceAdd', 'Home::adminServiceAdd');
+$routes->get('adminApplications', 'Home::adminApplications');
 $routes->get('datahandling', 'data_handling::addService');
 $routes->get('adminServices', 'Home::adminServices');
 $routes->get('logout', 'Home::logout');
